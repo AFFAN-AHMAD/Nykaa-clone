@@ -1,2 +1,2 @@
-# funny-week-7983
+# Nykaa Clone
 clone of nykaaman
