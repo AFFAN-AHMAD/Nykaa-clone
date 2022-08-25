@@ -1,0 +1,30 @@
+.Sc1{
+    border:1px solid black;
+    display:flex;
+    height:10vh;
+    
+}
+.Sc1>img{
+    height:5vh;
+    margin-left:5vw ;
+    margin-top: 2.5vh;
+}
+.sc11{
+    display:flex;
+    border:1px solid red;
+    gap:2vw;
+    margin-left:2vh;
+    margin: auto
+}
+.sc12>input{
+    border: 1px solid red;
+    background-color: rgb(228, 228, 228);
+}
+.sc12{
+    display: flex;
+}
+.sc12>p{
+    border: 1px solid red;
+    display: flex;
+    line-height: 5vh;
+}
