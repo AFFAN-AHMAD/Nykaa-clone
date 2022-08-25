@@ -18,7 +18,8 @@ const createQueries = (arr1,arr2) => {
             map.set(arr1[i],temp)
         }
     }
-}
+    }
+    // console.log(map)
 let newSArr = [];
 
 for ([key,values] of map) {
@@ -26,7 +27,7 @@ for ([key,values] of map) {
         newSArr.push({ [key]: e })
     })
 }
-
+console.log(newSArr)
 const queryArr = []
 newSArr.map((ele) => {
     for (x in ele) {
@@ -34,9 +35,10 @@ newSArr.map((ele) => {
     }
    
 })
-    
+    // console.log(queryArr[0]["$and"])
     return queryArr
 }
+// createQueries(arr1,arr2)
 
 module.exports = createQueries
 

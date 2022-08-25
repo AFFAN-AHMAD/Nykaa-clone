@@ -44,9 +44,9 @@ productsRouter.get("/filter", async (req, res) => {
     // const categArr = permutation(products_type);
     const queryArray = createQueries(products_type,brands)
     console.log(queryArray);
-    const queries = queryArray.map((ele, i) => {
-        return console.log(ele["$and"])
-    })
+    // const queries = queryArray.map((ele, i) => {
+    //     return console.log(ele["$and"])
+    // })
     // console.log(brandArr);
     // console.log(queries)
     // const result = await ProductsModel.find({$or:[{product_type:"lip balm"},{product_type:"lip crayon"}]});
