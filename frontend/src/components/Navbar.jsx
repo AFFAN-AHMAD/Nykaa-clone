@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
 import {Link} from "react-router-dom"
+import { MdOutlineAccountCircle } from 'react-icons/md';
+import { BsHandbag } from 'react-icons/bs';
+
 const Navbar = () => {
   return (
     <div>
@@ -15,6 +18,9 @@ const Navbar = () => {
 </div>
 <div className={styles.sc12}>
     <input type="text" placeholder='ase hi'/>
+        {/* <BiSearch/> */}
+        <MdOutlineAccountCircle/> <p> Account</p>
+        <BsHandbag/>
 </div>
         </div>
     </div>
