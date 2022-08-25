@@ -35,22 +35,24 @@ productsRouter.get("/brand", async (req, res) => {
 productsRouter.get("/filter", async (req, res) => {
     let brand = req.headers.brand;
     let product_type = req.headers.product_type
-    // console.log(typeof(brand))
-    console.log(product_type);
+   
     let brands = brand.split(",");
     let products_type = product_type.split(",")
+     console.log(brands)
+    console.log(products_type);
     // const brandArr = permutation(brands);
     // const categArr = permutation(products_type);
-    const queryArray = createQueries(brands, products_type)
-    console.log(queryArray)
+    const queryArray = createQueries(products_type,brands)
+    console.log(queryArray);
+    const queries = queryArray.map((ele, i) => {
+        return console.log(ele["$and"])
+    })
     // console.log(brandArr);
-    // console.log(categArr)
+    // console.log(queries)
     // const result = await ProductsModel.find({$or:[{product_type:"lip balm"},{product_type:"lip crayon"}]});
     // const result = await ProductsModel.find({ $or: [{ $and: [{ product_type: "lip crayon" }, { brand: "Kay Beauty" }] }, { $and: [{ product_type: "lip balm" }, { brand: "Earth Rhythm" }] }] })
     // const result = await ProductsModel.find({$or:[{$and:[{product_type:"lip crayon"},{brand:"Earth Rhythm"}]},{$and:[{product_type:"lip balm"},{brand:"Kay Beauty"}]}]})
-    const result =await ProductsModel.find({$or:[
-        { '$and': [{ product_type: 'lip balm' }, { brand: 'Earth Rhythm'}] }
-]})
+    const result =await ProductsModel.find({$or:queryArray})
     res.send(result)
 })
 module.exports = productsRouter;

@@ -2,9 +2,9 @@
 
 
 
-let arr2 =  [ 'Kay Beauty', 'Earth Rhythm', 'nykaa cosmetics' ];
-let arr1 = [ 'lip balm', 'lip crayon' ,"lip sticks"]
-const createQueries = () => {
+// let arr2 =  [ 'Kay Beauty', 'Earth Rhythm', 'nykaa cosmetics' ];
+// let arr1 = [ 'lip balm', 'lip crayon' ,"lipstick"]
+const createQueries = (arr1,arr2) => {
     const map = new Map;
     for (let i = 0; i < arr1.length; i++){
     for (let j = 0; j < arr2.length; j++){
