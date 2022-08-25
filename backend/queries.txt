@@ -1,0 +1,1 @@
+db.products.find({$or:[{$and:[{product_type:"lip crayon"},{brand:"Kay Beauty"}]},{$and:[{product_type:"lip balm"},{brand:"Earth Rhythm"}]}]})
