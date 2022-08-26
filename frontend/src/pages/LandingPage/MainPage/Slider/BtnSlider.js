@@ -13,7 +13,7 @@ export default function BtnSlider({ direction, moveSlide }) {
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >{
 
-      direction === "next" ? <ChevronRightIcon/> : <ChevronLeftIcon/>
+      direction === "next" ? <ChevronRightIcon h="30px" w="30px" color="grey"/> : <ChevronLeftIcon h="30px" w="30px" color="grey"/>
     }
     </button>
   );
