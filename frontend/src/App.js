@@ -5,9 +5,6 @@ import Address from "./pages/addressPage/Address";
 function App() {
   return (
     <Box bg="#f2f2f2">
-      {/* <Products/>
-       */}
-  <Address/>
     </Box>
   );
 }
