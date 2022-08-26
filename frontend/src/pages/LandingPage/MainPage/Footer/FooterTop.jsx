@@ -71,8 +71,8 @@ import {
   export default function FooterTop() {
     return (
       <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        bg="#3f414d"
+        color="white">
         <Container as={Stack} maxW={'6xl'} py={10}>
           <SimpleGrid
             templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
@@ -89,9 +89,10 @@ import {
 />Get special discount on your inbox</ListHeader>
               <Stack direction={'row'}>
                 <Input
-                  placeholder={'Your email address'}
-                  bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+                  placeholder={'Your email'}
+                  bg="#3f414d"
                   border={0}
+                  color="white"
                   _focus={{
                     bg: 'whiteAlpha.300',
                   }}

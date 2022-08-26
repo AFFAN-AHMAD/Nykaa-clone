@@ -1,48 +1,56 @@
 import { Box,Image } from '@chakra-ui/react'
 
-export default function Card() {
-    const property = {
-      imageUrl: 'https://bit.ly/2Z4KKcF',
-      imageAlt: 'Rear view of modern home with pool',
-      beds: 3,
-      baths: 2,
-      title: 'Modern home in city center in the heart of historic Los Angeles',
-      formattedPrice: '$1,900.00',
-      reviewCount: 34,
-      rating: 4,
-    }
-  
+export default function Card({property}) {
+
     return (
 
-      <Box  borderWidth='1px' borderRadius='lg' mb="15px"  w="49%" h="350px"
+      <Box  borderWidth='1px' borderRadius='lg' mb="10px"   w="49%" h="300px"
       cursor="pointer"
       _hover={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}
+      boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
       >
-        <Image src={property.imageUrl} alt={property.imageAlt} h="100%" w="100%" 
-         
-        objectFit="cover"
+        <Image src={property.imageUrl} alt={property.imageAlt}
+         borderRadius="3px"
+        objectFit="contain"
+        maxW="100%"
+        maxH="100%"
         />
   
-        <Box p='6' bg="white" m="10px" pos="relative" top="-120px">
+  {
+    property.title===undefined ? "":(
+      <Box p='6' bg="white" w="95%" m="auto" pos="relative" top="-100px" textAlign="center"
+borderRadius="3px" 
+
+>
+
+  <Box
+    mt='1'
+    fontWeight='semibold'
+    as='h4'
+    lineHeight='tight'
+    noOfLines={1}
+    color="#ff91bb"
+  >
+    {property.title}
+  </Box>
+{
+  property.formattedPrice===undefined? (<Box color="white">{"a"}</Box>):(
+ <Box>
+    {property.formattedPrice}
   
-          <Box
-            mt='1'
-            fontWeight='semibold'
-            as='h4'
-            lineHeight='tight'
-            noOfLines={1}
-          >
-            {property.title}
-          </Box>
-  
-          <Box>
-            {property.formattedPrice}
-            <Box as='span' color='gray.600' fontSize='sm'>
-              / wk
-            </Box>
-          </Box>
-  
-        </Box>
+  </Box>
+  )
+}
+ 
+
+</Box>
+
+    )
+
+
+
+  }
+       
       </Box>
 
     )
