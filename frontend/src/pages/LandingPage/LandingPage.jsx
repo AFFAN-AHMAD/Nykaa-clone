@@ -8,8 +8,8 @@ import Navbar from "../../components/Navbar/Navbar"
 export default function LandingPage(){
 
     return(
-        <div style={{backgroundColor:"#f3f3f3"}}>
-            <Navbar/>
+        <div >
+        <Navbar/>
         
         <MainPage/>
 

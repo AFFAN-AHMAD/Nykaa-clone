@@ -16,7 +16,9 @@ export default function MainPage(){
    
     // console.log(TopBrandData)
     return(
-        <Box w="100%">
+        <Box w="100%" 
+        bg="#f3f3f3"
+        >
             
         <Slider dataSlider={dataSlider1}/>
         <CountDownImg/>
