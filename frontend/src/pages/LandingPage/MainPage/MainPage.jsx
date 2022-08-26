@@ -2,7 +2,6 @@ import Slider from "./Slider/Slider";
 import {dataSlider1,dataSlider2} from "./Slider/dataSlider"
 import Container from "./Container/Container";
 import Container2 from "./Container/Container2";
-import Footer from "./Footer/Footer";
 import CountDownImg from "./CountDownImg";
 
 import TopBrandData from "./Container/TopBrandData"
@@ -10,7 +9,8 @@ import { Box, Image } from "@chakra-ui/react";
 import onlyAtNykaaData from "./Container/onlyAtNykaaData";
 import featureBrandData from "./Container/featureBrandData";
 import belowFeatureBrandData from "./Container/belowFeatureBrandData";
-import Navbar from "../../../components/Navbar";
+
+import Navbar from "../../../components/Navbar/Navbar";
    
 
 export default function MainPage(){
@@ -18,9 +18,11 @@ export default function MainPage(){
     // console.log(TopBrandData)
     return(
         <Box w="100%">
+
+         <Navbar/>
         
-        <Navbar/>
-            
+        
+                  
         <h1>Main Page</h1>
 
         <Slider dataSlider={dataSlider1}/>
@@ -51,7 +53,6 @@ export default function MainPage(){
         {/* <Slider dataSlider={dataSlider2}/> */}
 
 
-        <Footer/>
 
         </Box>
     )
