@@ -1,7 +1,7 @@
 import React from "react";
-
+import {Box} from "@chakra-ui/react";
 const Rightbar = () => {
-  return <div>Rightbar</div>;
+  return <Box></Box>;
 };
 
 export default Rightbar;
