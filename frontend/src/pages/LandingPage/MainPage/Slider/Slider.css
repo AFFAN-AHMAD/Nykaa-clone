@@ -1,6 +1,6 @@
 .container-slider {
-  max-width: 1350px;
-  height: 300px;
+  max-width: 100%;
+  height: 350px;
   margin: 100px auto 0;
   position: relative;
   overflow: hidden;
@@ -28,11 +28,11 @@
 }
 
 .btn-slide {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: #f1f1f1;
-  border: 1px solid rgba(34, 34, 34, 0.287);
+  background: #ffff;
+  border: 1px solid lightgrey;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -47,12 +47,12 @@
 }
 .prev {
   top: 50%;
-  left: 20px;
+  left:5px;
   transform: translateY(-60%);
 }
 .next {
   top: 50%;
-  right: 20px;
+  right: 5px;
   transform: translateY(-60%);
 }
 
