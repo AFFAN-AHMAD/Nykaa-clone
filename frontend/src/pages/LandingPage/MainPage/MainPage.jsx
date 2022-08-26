@@ -10,7 +10,6 @@ import onlyAtNykaaData from "./Container/onlyAtNykaaData";
 import featureBrandData from "./Container/featureBrandData";
 import belowFeatureBrandData from "./Container/belowFeatureBrandData";
 
-import Navbar from "../../../components/Navbar/Navbar";
    
 
 export default function MainPage(){
@@ -18,13 +17,7 @@ export default function MainPage(){
     // console.log(TopBrandData)
     return(
         <Box w="100%">
-
-         <Navbar/>
-        
-        
-                  
-        <h1>Main Page</h1>
-
+            
         <Slider dataSlider={dataSlider1}/>
         <CountDownImg/>
         <Box fontSize="24px" textTransform="uppercase" color="#3f414d" fontWeight={500} w="12%" m="auto" mt="40px" mb="40px">Top Brands</Box>

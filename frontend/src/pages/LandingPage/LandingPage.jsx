@@ -3,12 +3,13 @@ import ScrollToTop from "react-scroll-to-top";
 import { ArrowUpIcon} from '@chakra-ui/icons';
 import Footer from "../../components/Footer/Footer";
 
-
+import Navbar from "../../components/Navbar/Navbar"
 
 export default function LandingPage(){
 
     return(
         <div style={{backgroundColor:"#f3f3f3"}}>
+            <Navbar/>
         
         <MainPage/>
 
