@@ -33,6 +33,7 @@ export default function Slider({dataSlider}) {
     return (
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
+
                 return (
                     <div
                     key={obj.id}
@@ -40,6 +41,7 @@ export default function Slider({dataSlider}) {
                     >
                         <img 
                         src={process.env.PUBLIC_URL + `/LandingPageImgs/img${index + 1}.webp`} 
+                        alt={`images+${index}`}
                         />
   
                     </div>
@@ -51,6 +53,7 @@ export default function Slider({dataSlider}) {
             <div className="container-dots">
                 {Array.from({length: 5}).map((item, index) => (
                     <div 
+                    key={index}
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>

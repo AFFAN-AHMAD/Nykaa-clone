@@ -5,8 +5,7 @@ import {
     SimpleGrid,
     Stack,
     Text,
-    Tag,
-    useColorModeValue,
+    Image,
   } from '@chakra-ui/react';
   
  
@@ -22,26 +21,26 @@ import {
   export default function MainFooter() {
     return (
       <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        bg={"#8c8d94"}
+        color={"white"}
+        fontSize="14px"
+        >
         <Container as={Stack} maxW={'6xl'} py={10}>
           <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={8}>
             <Stack align={'flex-start'}>
-              <ListHeader>Product</ListHeader>
-              <Link href={'#'}>Overview</Link>
-              <Stack direction={'row'} align={'center'} spacing={2}>
-                <Link href={'#'}>Features</Link>
-                <Tag
-                  size={'sm'}
-                  bg={useColorModeValue('green.300', 'green.800')}
-                  ml={2}
-                  color={'white'}>
-                  New
-                </Tag>
-              </Stack>
-              <Link href={'#'}>Tutorials</Link>
-              <Link href={'#'}>Pricing</Link>
-              <Link href={'#'}>Releases</Link>
+              
+              <ListHeader>
+                <Image src={process.env.PUBLIC_URL + `/LandingPageImgs/nykaaFooter.png`} alt="image"/>
+              </ListHeader>
+              <Link  target='_blank'  href={'https://www.nykaa.com/who_are_we/?utm_source=Desktop_web_footer'}>Who are we?</Link>
+                <Link href={'https://www.nykaa.com/who_are_we#wwrcopen'}>Careers</Link>
+               
+              <Link href={'#'}>Authenticity</Link>
+              <Link href={'#'}>Press</Link>
+              <Link href={'#'}>Testimonials</Link>
+              <Link href={'#'}>Nykaa CSR</Link>
+              <Link href={'#'}>Responsible Disclosure</Link>
+              <Link href={'#'}>Investor Relations</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Company</ListHeader>
