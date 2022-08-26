@@ -1,13 +1,13 @@
 import React from "react";
-import {Box} from "@chakra-ui/react";
+import {Box,Stack} from "@chakra-ui/react";
 import Sort from "./Sort";
 import FIlter from "./Filter";
 const Sidebar = () => {
-    return <Box w="330px">
+    return <Stack  gap={5} maxW="400px" w="230px" >
         <Sort />
         <FIlter/>
         
-  </Box>;
+  </Stack>;
 };
 
 export default Sidebar;

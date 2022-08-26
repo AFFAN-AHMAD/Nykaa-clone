@@ -60,22 +60,22 @@ function Rating({ rating, numReviews }:RatingProps) {
 }
 
 function ProductAddToCart({data}) {
-console.log(data)
+// console.log(data)
   
   return (
-    <Flex p={3} w="full"  >
+    <Flex p={2} w="full"  >
       {/* size */}
       <Box
         bg={useColorModeValue('white', 'gray.800')}
         maxW="xs"
         borderWidth="1px"
-        rounded="lg"
-        shadow="lg"
+        rounded="md"
+        // shadow="lg"
         position="relative"
        textAlign={"center"}
         // h="400px"
-        w="200px"
-        p="2"
+        w="225px"
+       cursor={"pointer"} 
       >
         {/* {data.isNew && (
           <Circle
@@ -94,9 +94,10 @@ console.log(data)
           h="240px"
           w="200px"
           //  border={"1px solid teal"}
+          p="2"
         />
 
-        <Box p="0">
+        <Box p="2">
           {/* <Flex  alignItems="baseline" >
             {data.isNew && (
               <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="red">
@@ -106,11 +107,11 @@ console.log(data)
           </Flex> */}
           <Flex mt="2"  justifyContent="center">
             <Box
-              fontSize="md"
+              fontSize="sm"
               fontWeight="semibold"
               as="h4"
               lineHeight="tight"
-              h="50px"
+              h="40px"
               overflowY="hidden"
               p={0}
               // m={0}
@@ -150,12 +151,14 @@ console.log(data)
                 {Number(data.price)}
                 </Box>
           </Flex>
-          <Flex h="40px">
-            <Box border="1px solid #e62e77" w="50%" h="40px">hi</Box>
-            <Box border="1px solid #e62e77" bg="#e62e77" color="white" w="50%" h="40px" pt="1">Add to Bag</Box>
-          </Flex>
+         
         </Box>
+        <Flex h="40px">
+            <Box border="1px solid #e62e77" w="50%" h="40px" color="#e62e77"  pt="2.5" fontSize={"xs"} fontWeight="bold">View Details</Box>
+            <Box border="1px solid #e62e77" bg="#e62e77" color="white" w="50%" h="40px" pt="2.5" fontSize={"xs"} fontWeight="bold">Add to Bag</Box>
+          </Flex>
       </Box>
+       
     </Flex>
   );
 }
