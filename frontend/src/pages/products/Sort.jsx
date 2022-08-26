@@ -7,6 +7,8 @@ import {
   AccordionPanel,
   Box,
   AccordionIcon,
+  Checkbox,
+  Flex
 } from '@chakra-ui/react'
 import axios from "axios"
 
@@ -26,7 +28,11 @@ const Sort = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem 
+    <Flex justifyContent="space-between"> <label>Price Low to High</label><Checkbox colorScheme="pink" /></Flex>
+    <Flex justifyContent="space-between"> <label>Price High to Low</label><Checkbox colorScheme="pink" /></Flex>
+    <Flex justifyContent="space-between"> <label>A-Z</label><Checkbox colorScheme="pink" /></Flex>
+    <Flex justifyContent="space-between"> <label>Popularity</label><Checkbox colorScheme="pink" /></Flex>
+    <Flex justifyContent="space-between"> <label>New Arrival</label><Checkbox colorScheme="pink" /></Flex>
     </AccordionPanel>
   </AccordionItem>
 </Accordion>

@@ -14,7 +14,9 @@ import axios from "axios"
 
 const FIlter = () => {
   const [noOfBRands, SetNoOfBrands] = useState([]);
-     const [noOfCategory,SetnoOfCategory] = useState([])
+  const [noOfCategory, SetnoOfCategory] = useState([]);
+  const [brandsFil, setBrandFil] = useState([]);
+  const [categFil,setCategFil] = useState([])
 
   useEffect(() => {
     axios.get("http://localhost:8080/products/brand").then(({ data }) => {
@@ -23,7 +25,59 @@ const FIlter = () => {
     axios.get("http://localhost:8080/products/category").then(({ data }) => {
       SetnoOfCategory(data)
     })
-  },[])
+  }, []);
+
+  const handleCateg = (e ) => {
+    const name = e.target.name;
+    const isChecked = e.target.checked;
+    // console.log(name, isChecked)
+    if (isChecked) {
+      setCategFil([...categFil,e.target.name])
+    } else {
+      const filter = categFil.filter((ele) => {
+        return ele != name
+      });
+      setCategFil([...filter])
+    }
+  }
+
+  const handleBrand = (e) => {
+    // console.log(e.target.name);
+    const name = e.target.name;
+    const isChecked = e.target.checked
+    if (isChecked) {
+      setBrandFil([...brandsFil,e.target.name])
+    } else {
+      const filter = brandsFil.filter((ele) => {
+        return ele != name
+      });
+      setBrandFil([...filter])
+    }
+  }
+
+  useEffect(() => {
+    console.log(brandsFil)
+  }, [brandsFil]);
+
+useEffect(() => {
+    console.log(categFil)
+  }, [categFil]);
+
+  useEffect(() => {
+    axios({
+  method: 'get',
+  url: 'http://localhost:8080/products/filter',
+      responseType: 'stream',
+      headers: {
+        brand: brandsFil,
+        product_type:categFil
+  }
+})
+  .then(function (response) {
+    console.log(response.data)
+  });
+  },[brandsFil,categFil])
+  
   return <Stack bg="white"><Accordion defaultIndex={[0]} allowMultiple>
     {/* category */}
   <AccordionItem>
@@ -36,7 +90,10 @@ const FIlter = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4} spacing={4}>
-        {noOfCategory.map((ele) => (<Flex justifyContent="space-between"> <label>{ele}</label><Checkbox colorScheme="pink" /></Flex>))}
+        {noOfCategory.map((ele, i) => (<Flex justifyContent="space-between" key={i}> <label>{ele}</label><Checkbox colorScheme="pink"
+          name={ele}
+          onChange={(e)=>handleCateg(e)}
+        /></Flex>))}
        
     </AccordionPanel>
   </AccordionItem>
@@ -52,7 +109,11 @@ const FIlter = () => {
       </AccordionButton>
     </h2>
       <AccordionPanel pb={4}>
-        {noOfBRands.map((ele) =>(<Flex justifyContent="space-between"> <label>{ele}</label><Checkbox colorScheme="pink" /></Flex>))
+        {noOfBRands.map((ele,i) => (<Flex justifyContent="space-between" key={i}> <label>{ele}</label><Checkbox colorScheme={"pink"}
+          name = {ele}
+          onChange={(e) => handleBrand(e)
+          }
+        ></Checkbox></Flex>))
         
         
         }

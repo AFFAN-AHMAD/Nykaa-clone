@@ -12,14 +12,14 @@ const Products = () => {
       setData(data)
   })
 },[])
-    return <Box w="80%" margin={"auto"} mt="30px" border={"5px solid teal"}>
+    return <Box w="80%" margin={"auto"} mt="30px">
                 <Heading textAlign="center" fontSize={"xl"}> All Products</Heading>
         <Flex  mt="10px" maxW="" >
             <Sidebar />
             <Grid templateColumns='repeat(3, 1fr)'  margin={"auto"}>
 
-                {data.map((ele) => (
-                    <ProductAddToCart data={ ele} />
+                {data.map((ele,i) => (
+                    <ProductAddToCart data={ ele} key={i} />
                     ))}
             </Grid>
         </Flex>
