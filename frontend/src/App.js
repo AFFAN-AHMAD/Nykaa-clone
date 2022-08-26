@@ -1,9 +1,10 @@
 
-
+import React from "react";
+import Address from "../src/pages/addressPage/Address"
 function App() {
   return (
-  <div>
-
+    <div>
+      <Address/>
   </div>
   )
 }
