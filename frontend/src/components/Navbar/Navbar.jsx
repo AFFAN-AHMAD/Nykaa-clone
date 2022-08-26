@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import BasicUsage from "./BasicUsage";
+import DrawerExample from "./DrawerExample";
+import { useDisclosure } from "@chakra-ui/react";
 const Navbar = () => {
   const [hooks, setHooks] = useState(false);
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
   //   console.log(hooks);
   return (
     <div>
@@ -63,7 +64,7 @@ const Navbar = () => {
               width: "20px",
               marginLeft: "1vw",
               marginTop: "1vh",
-            }}
+            }} 
           />{" "}
           <Link
             to=""
@@ -75,7 +76,7 @@ const Navbar = () => {
           >
             Account
           </Link>
-          <BasicUsage hooks={hooks} />
+          <DrawerExample isOpen={isOpen} onOpen={onOpen} onClose={onClose} hooks={hooks}/>
         </div>
         <div
           style={{ height: "100%", width: "10vw" }}
