@@ -12,7 +12,7 @@ import {
 	Tooltip,
 	Text,
 } from "@chakra-ui/react";
-import {Link} from "react-router-dom"
+import {Link,useNavigate} from "react-router-dom"
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 
@@ -76,7 +76,7 @@ function Rating({ rating, numReviews }: RatingProps) {
 
 function ProductAddToCart({ data }) {
 	// console.log(data)
-
+	const navigate = useNavigate()
 	return (
 		<Flex
 			p={2}
@@ -147,9 +147,11 @@ function ProductAddToCart({ data }) {
 						pt="2.5"
 						fontSize={"xs"}
 						fontWeight="bold"
+						onClick={() => navigate(`/products/${data.id}`)}
 					>
-						<Link to={`/products/${data.id}`}>View Details</Link>
+						View Details
 					</Box>
+
 					<Box
 						border="1px solid #e62e77"
 						bg="#e62e77"
@@ -160,7 +162,7 @@ function ProductAddToCart({ data }) {
 						fontSize={"xs"}
 						fontWeight="bold"
 					>
-						Add to Bag
+						Wishlist
 					</Box>
 				</Flex>
 			</Box>

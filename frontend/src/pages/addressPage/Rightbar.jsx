@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+
 import {
   Accordion,
   AccordionItem,
@@ -12,9 +14,11 @@ import {
   VStack
 } from '@chakra-ui/react'
 import { useDispatch, useSelector } from "react-redux";
+import { getItemApi } from "../../store/cart/cart.actions";
 
 const Rightbar = () => {
-  const cart = useSelector((state) => state.cart.cartData);
+const cart = useSelector((state)=>state.cart.cartData)
+const dispatch = useDispatch()
   const cartQuantity = cart.length;
   const cartTotal = cart.reduce((ac, el) => {
     return ac + +el.price * +el.quantity;
@@ -24,7 +28,10 @@ const Rightbar = () => {
   },0);
   const discount = (cartTotal * 0.08).toFixed(0);
   const grandTotal = cartTotal - discount;
-  // console.log(cart)
+   useEffect(() => {
+			dispatch(getItemApi());
+		}, []);
+  console.log(cart)
   return <Box bg="white">
    <Accordion defaultIndex={[0]} allowMultiple>
   <AccordionItem>
