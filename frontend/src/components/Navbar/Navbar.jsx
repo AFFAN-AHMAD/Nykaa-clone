@@ -79,7 +79,7 @@ const Navbar = () => {
           <DrawerExample isOpen={isOpen} onOpen={onOpen} onClose={onClose} hooks={hooks}/>
         </div>
         <div
-          style={{ height: "100%", width: "10vw" }}
+          style={{ height: "100%", width: "5vw",}}
           onClick={() => setHooks(false)}
         ></div>
       </div>

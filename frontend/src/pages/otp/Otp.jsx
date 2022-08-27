@@ -1,6 +1,5 @@
 import axios from "axios";
 import React from "react";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Otp.module.css";
 
@@ -34,7 +33,7 @@ const Otp = () => {
     if (Number(otp) !== getotp) {
       return alert("otp is not correct");
     } else {
-      alert("go to log in page");
+      alert("Go to log in page");
       axios({
         method: "post",
         url: "http://localhost:8080/signup",
@@ -46,8 +45,6 @@ const Otp = () => {
         })
         .catch((err) => console.log(err, "err"));
     }
-
-    // axios.post()
   };
 
   const otpsend = (e) => {
@@ -64,47 +61,46 @@ const Otp = () => {
           style={{ height: "17px", margin: "4vh 0vh 0vh 4vh" }}
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVhNLTUnAPBQYMepezLlKgTmXwNHlHnKTdlFYGlgW56q9V9lJ3cpSiYLBrRgkRRuFSd0&usqp=CAU"
           alt=""
+          onClick={()=>navigate("/")}
         />
-        <h1>LOGIN / REGISTER</h1>
+        <h1>SIGN UP / REGISTER</h1>
 
-        <hr style={{ margin: "2vh 5vh 0vh 5vh" }} />
-        {/* <form onSubmit={handelSubmit}>
-          <input type="text" onChange={(e) => setGotp(e.target.value)} />
-
-          <button
-            style={{
-              backgroundColor: "#fb2e79",
-              margin: "3vh 5vh 0vh 5vh",
-              color: "white",
-              width: "20vw",
-              height: "6vh",
-              fontSize: "1.1rem",
-              fontWeight: "500",
-              borderRadius: "3px",
-            }}
-          >
-            Enter Phone Number or Email
-          </button>
-        </form> */}
+        <hr style={{ margin: "2vh 2vh 0vh 2vh" }} />
         <form onSubmit={otpsend}>
           <input
-            placeholder="email"
+            placeholder="Email or Phone Number"
             onChange={handleChange}
             name="email"
-          ></input>
+            style={{
+              border: "1px solid red",
+              height: "6vh",
+              margin: "6vh 0vh 0vh 4vh",
+              width: "85%",
+              textAlign: "center",
+              outline: "red",
+            }}
+          />
           <br></br>
           <input
-            placeholder="password"
+            placeholder="Password"
             onChange={handleChange}
             name="password"
-          ></input>
+            style={{
+              border: "1px solid red",
+              height: "6vh",
+              margin: "2vh 0vh 0vh 4vh",
+              width: "85%",
+              textAlign: "center",
+              outline: "red",
+            }}
+          />
           <br></br>
           <button
             style={{
               backgroundColor: "#fb2e79",
-              margin: "3vh 5vh 0vh 5vh",
+              margin: "2vh 0vh 0vh 4vh",
               color: "white",
-              width: "20vw",
+              width: "85%",
               height: "6vh",
               fontSize: "1.1rem",
               fontWeight: "500",
@@ -112,7 +108,7 @@ const Otp = () => {
             }}
             onClick={sendotp}
           >
-            Send otp
+            Send OTP
           </button>
           <br></br>
         </form>
@@ -120,9 +116,30 @@ const Otp = () => {
           <input
             placeholder="Enter otp"
             onChange={(e) => setotp(e.target.value)}
+            style={{
+              border: "1px solid red",
+              height: "6vh",
+              margin: "15vh 0vh 0vh 4vh",
+              width: "85%",
+              textAlign: "center",
+              outline: "red",
+            }}
           ></input>
           <br></br>
-          <button>signup</button>
+          <button
+            style={{
+              backgroundColor: "#fb2e79",
+              margin: "2vh 0vh 0vh 4vh",
+              color: "white",
+              width: "85%",
+              height: "6vh",
+              fontSize: "1.1rem",
+              fontWeight: "500",
+              borderRadius: "3px",
+            }}
+          >
+            Signup
+          </button>
         </form>
       </div>
     </div>

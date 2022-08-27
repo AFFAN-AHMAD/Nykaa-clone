@@ -1,0 +1,22 @@
+.sc1{
+    height:120vh;
+    border:1px solid black;
+    border-radius: 10px;
+    width:26%;
+    margin :auto;
+    margin-top: 10vh;
+    background-color: white;
+}
+.sc1>h1{
+    font-size: 1.2rem;
+    margin-left: 20vh;
+    font-weight: 500;
+    margin-top: -4vh;
+    /* color:grey */
+}
+.sc1>p{
+    color:rgb(122, 122, 122);
+    font-weight: 500;
+    margin-top:1vh ;
+    font-size: 1.04rem;
+}
