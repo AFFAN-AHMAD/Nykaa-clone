@@ -1,7 +1,6 @@
 
 import {Box} from "@chakra-ui/react"
 import Card2 from './Card2'
-// import TopBrandData from "./TopBrandData";
 
 export default function Container({data}) {
   return (
