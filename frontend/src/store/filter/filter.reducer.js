@@ -7,7 +7,8 @@ let initialState = {
         success: false,
         error:false
     },
-  productsData: [],
+    productsData: [],
+  filterData:[]
 };
 export const filterReducer = (state = initialState, { type, payload }) => {
 

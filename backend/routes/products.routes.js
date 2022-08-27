@@ -53,15 +53,52 @@
         }
         let brands = brand.split(",");
         let products_type = product_type.split(",")
-        // console.log(brands)
-        // console.log(products_type);
-    
         const queryArray = createQueries(products_type,brands)
         console.log(queryArray,"with both");
-    
         const result =await ProductsModel.find({$or:queryArray})
         res.send(result)
     })
+
+    productsRouter.get("/sort", async (req, res) => {
+        const arr = req.headers.id;
+        const nwArr=[]
+        arr.split(",").map((ele) => {
+            nwArr.push({ id:  ele })
+        })
+        const data = await ProductsModel.find({ $or: nwArr }).sort({"price":1})
+        return res.send(data)
+    })
+     productsRouter.get("/sorting", async (req, res) => {
+        const arr = req.headers.id;
+        const nwArr=[]
+        arr.split(",").map((ele) => {
+            nwArr.push({ id:  ele })
+        })
+        const data = await ProductsModel.find({ $or: nwArr }).sort({"price":-1})
+        return res.send(data)
+     })
+    productsRouter.get("/sortAlpha", async (req, res) => {
+        const arr = req.headers.id;
+        const nwArr=[]  
+        arr.split(",").map((ele) => {
+            nwArr.push({ id:  ele })
+        })
+       
+        const data = await ProductsModel.find({ $or: nwArr }).sort({"name":1})
+        return res.send(data)
+    })
+    productsRouter.get("/sortRevAlpha", async (req, res) => {
+        const arr = req.headers.id;
+        const nwArr=[]  
+        arr.split(",").map((ele) => {
+            nwArr.push({ id:  ele })
+        })
+       
+        const data = await ProductsModel.find({ $or: nwArr }).sort({"name":-1})
+        return res.send(data)
+    })
+
+
     module.exports = productsRouter;
 
  // const brandArr = permutation(brands);
