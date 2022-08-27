@@ -1,5 +1,3 @@
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
 import Login from "./pages/Login/Login";
 import Verifymail from "./pages/Login/Verifymail";
 import Otp from "./pages/otp/Otp";
@@ -13,7 +11,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    <div style={{ background: "whitesmoke" }}>
+    <div >
       <Routes>
         <Route path={"/"} element={<LandingPage />} />
         <Route path={"/signup"} />

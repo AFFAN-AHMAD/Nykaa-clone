@@ -8,7 +8,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   //   console.log(hooks);
   return (
-    <div>
+    <div style={{background:"white"}}>
       <div className={styles.Sc1}>
         <img
           src="https://theme.zdassets.com/theme_assets/222949/60503496e109d9e249ab19791fb335f0459a483e.png"
@@ -184,7 +184,7 @@ const Navbar = () => {
               </div>
               <div>
                 <h3>
-                  <Link to="">Lips</Link>
+                  <Link to="/products">Lips</Link>
                 </h3>
                 <p>
                   <Link to="">Lipstick</Link>

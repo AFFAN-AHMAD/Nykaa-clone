@@ -8,19 +8,21 @@ import Navbar from "../../components/Navbar/Navbar";
 export default function LandingPage() {
 	return (
 		<div>
+			<Navbar/>
 			<MainPage />
 
 			<ScrollToTop
 				style={{
 					borderRadius: "50%",
-					heigh: "60px",
-					width: "60px",
+					height: "45px",
+					width: "45px",
 					padding: "0px",
 					margin: "0px",
 				}}
 				smooth
-				component={<ArrowUpIcon />}
+				component={<ArrowUpIcon fontSize={"xl"} />}
 			/>
+			<Footer/>
 		</div>
 	);
 }
