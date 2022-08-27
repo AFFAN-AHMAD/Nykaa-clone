@@ -1,10 +1,11 @@
 
-import Address from "../src/pages/addressPage/Address";
+import Payment from "./pages/PaymentPage/Payment";
 function App() {
   return (
 
-      <Address />
-
+    <div>
+      {/* <Address /> */}
+      <Payment/>
   </div>
   )
 }
