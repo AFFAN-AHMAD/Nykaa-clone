@@ -1,6 +1,6 @@
 
-import React from "react";
 import Address from "../src/pages/addressPage/Address";
+
 import Products from "../src/pages/products/Products";
 import ProductDetails from "../src/pages/ProductDetails/ProductDetails"
 import Navbar  from "../src/components/Navbar/Navbar"
@@ -11,6 +11,7 @@ function App() {
       {/* <Products/> */}
       <ProductDetails/>
       <Address />
+
   </div>
   )
 }
