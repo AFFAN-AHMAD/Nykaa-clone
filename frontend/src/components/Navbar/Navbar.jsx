@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link to="">Beauty Advice</Link>
           </p>
         </div>
-        <div style={{ width: "10vw" }} onClick={() => setHooks(false)}></div>
+        <div style={{ width: "5vw" }} onClick={() => setHooks(false)}></div>
         <div className={styles.sc12}>
           {/* <p><BiSearch/></p> */}
           <div
@@ -79,7 +79,7 @@ const Navbar = () => {
           <DrawerExample isOpen={isOpen} onOpen={onOpen} onClose={onClose} hooks={hooks}/>
         </div>
         <div
-          style={{ height: "100%", width: "10vw" }}
+          style={{ height: "100%", width: "5vw",}}
           onClick={() => setHooks(false)}
         ></div>
       </div>

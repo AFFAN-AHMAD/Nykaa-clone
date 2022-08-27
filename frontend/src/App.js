@@ -1,6 +1,10 @@
-
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Login from "./pages/Login/Login";
+import Verifymail from "./pages/Login/Verifymail";
+import Otp from "./pages/otp/Otp";
+import Signup from "./pages/Signup/Signup";
 import Address from "../src/pages/addressPage/Address";
-
 import Products from "../src/pages/products/Products";
 import ProductDetails from "../src/pages/ProductDetails/ProductDetails"
 import Navbar from "../src/components/Navbar/Navbar"
@@ -10,7 +14,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div style={{ background: "whitesmoke" }}>
-      <Navbar/>
       <Routes>
         <Route path={"/"} element={<LandingPage />} />
         <Route path={"/signup"} />
@@ -22,7 +25,6 @@ function App() {
         <Route path={"*"} />
         <Route />
       </Routes>
-    <Footer/>
   </div>
   )
 }
