@@ -1,10 +1,10 @@
-import LandingPage from "./pages/LandingPage/LandingPage";
 
-
+import Address from "../src/pages/addressPage/Address";
 function App() {
   return (
-  <div>
-<LandingPage/>
+
+      <Address />
+
   </div>
   )
 }
