@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 var cors = require('cors')
 
+const cartRouter = require("./routes/cart.routes");
 const productsRouter = require("./routes/products.routes");
 const connection = require("./db")
 const app = express();
@@ -17,7 +18,8 @@ app.get("/", (req, res) => {
     res.send("hi")
 })
 
-app.use("/products",productsRouter)
+app.use("/products",productsRouter);
+app.use("/cart", cartRouter);
 
 app.listen(8080, async() => {
     try {
