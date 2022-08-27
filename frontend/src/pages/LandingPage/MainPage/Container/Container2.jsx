@@ -1,11 +1,11 @@
 
 import {Box} from "@chakra-ui/react"
-import Card from './Card'
+import Card2 from './Card2'
 
 export default function Container({data}) {
   return (
     
-    <Box w="80%" m="auto"  display="flex"  justifyContent="space-between"  flexWrap="wrap">
+    <Box w="80%" m="auto"  gap="10px" display="flex"  justifyContent={"center"}   flexWrap="wrap">
 
         {
           data.map((el,index)=>{
@@ -13,7 +13,7 @@ export default function Container({data}) {
 
             return(
 
-        <Card key={index} property={el}/>
+        <Card2 key={index} property={el}/>
 
             )
           })

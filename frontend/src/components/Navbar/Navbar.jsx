@@ -67,7 +67,7 @@ const Navbar = () => {
             }} 
           />{" "}
           <Link
-            to="/signup"
+            to=""
             style={{
               display: hooks === true ? "none" : "block",
               marginLeft: "0.5vw",
@@ -91,7 +91,7 @@ const Navbar = () => {
               <Link to="">Make</Link>
             </p>
             <div className={styles.sc2111}>
-              <div style={{ backgroundColor: "white" }}>
+              <div>
                 <h3>
                   <Link to="">Face</Link>
                 </h3>
@@ -182,7 +182,7 @@ const Navbar = () => {
                   <Link to="">Makeup Combos</Link>
                 </p>
               </div>
-              <div style={{ backgroundColor: "white" }}>
+              <div>
                 <h3>
                   <Link to="">Lips</Link>
                 </h3>
@@ -264,7 +264,7 @@ const Navbar = () => {
                   <Link to="">Multi-Functional Makeup Palettes</Link>
                 </h3>
               </div>
-              <div style={{ backgroundColor: "white" }}>
+              <div>
                 <h3>
                   <Link to="">Top Brands</Link>
                 </h3>
