@@ -7,10 +7,10 @@ import Navbar  from "../src/components/Navbar/Navbar"
 function App() {
   return (
     <div style={{ background: "whitesmoke" }}>
-      <Navbar/>
-      {/* <Products/> */}
-      <ProductDetails/>
-      <Address />
+      {/* <Navbar/> */}
+      <Products/>
+      {/* <ProductDetails/> */}
+      {/* <Address /> */}
 
   </div>
   )

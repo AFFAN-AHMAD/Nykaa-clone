@@ -7,7 +7,7 @@ import { useDispatch,useSelector } from "react-redux";
 
 const Products = () => {
 const productData = useSelector((state) => state.products.productsData);
-  console.log(productData)
+  // console.log(productData)
   const [data, setData] = useState([])
   
   useEffect(() => {

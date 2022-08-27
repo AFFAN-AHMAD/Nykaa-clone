@@ -96,7 +96,7 @@ const FIlter = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4} spacing={4}>
-        {noOfCategory.map((ele, i) => (<Flex justifyContent="space-between" key={i}> <label>{ele}</label><Checkbox colorScheme="pink"
+        {noOfCategory.map((ele, i) => (<Flex justifyContent="space-between" mb={2} key={i}> <label>{ele}</label><Checkbox colorScheme="pink"
           name={ele}
           onChange={(e)=>handleCateg(e)}
         /></Flex>))}
@@ -115,7 +115,7 @@ const FIlter = () => {
       </AccordionButton>
     </h2>
       <AccordionPanel pb={4}>
-        {noOfBRands.map((ele,i) => (<Flex justifyContent="space-between" key={i}> <label>{ele}</label><Checkbox colorScheme={"pink"}
+        {noOfBRands.map((ele,i) => (<Flex justifyContent="space-between" mb={2} key={i}> <label>{ele}</label><Checkbox colorScheme={"pink"}
           name = {ele}
           onChange={(e) => handleBrand(e)
           }
@@ -137,8 +137,13 @@ const FIlter = () => {
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-      Lorem
+    <AccordionPanel pb={4} gap={2}>
+        <Flex justifyContent="space-between" mb={2}> <label>Rs. 0 - Rs. 499</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Rs. 500 - Rs. 999</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Rs. 1000 - Rs. 1999</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Rs. 2000 - Rs. 3999</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>{ `Rs. 4000 & above`}</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+
     </AccordionPanel>
   </AccordionItem>
     {/* gender */}
@@ -146,13 +151,16 @@ const FIlter = () => {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'fontWeight={"bolder"}>
-            Gender
+        Gender
           </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem
+     <Flex justifyContent="space-between" mb={2}> <label>Female</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Unisex</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Boy</label><Checkbox colorScheme="pink" isDisabled /></Flex>
+        <Flex justifyContent="space-between" mb={2}> <label>Male</label><Checkbox colorScheme="pink" isDisabled /></Flex>
     </AccordionPanel>
   </AccordionItem>
 </Accordion></Stack>;
