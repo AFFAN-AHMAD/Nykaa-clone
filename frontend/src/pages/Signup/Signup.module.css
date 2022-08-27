@@ -1,0 +1,9 @@
+.sc1{
+    height:120vh;
+    border:1px solid black;
+    border-radius: 10px;
+    width:26%;
+    margin :auto;
+    margin-top: 10vh;
+    background-color: white;
+}
