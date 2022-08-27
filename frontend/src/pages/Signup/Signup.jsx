@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./Signup.module.css";
 
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   return (
     <div style={{ backgroundColor: "#f3f3f3" }}>
       <div style={{ backgroundColor: "#f3f3f3" }}>
@@ -34,6 +38,7 @@ const Signup = () => {
             fontWeight: "500",
             borderRadius: "3px",
           }}
+          onClick={()=>navigate("/otp")}
         >
           Enter Phone Number or Email
         </button>
