@@ -3,15 +3,17 @@ import axios from "axios"
 import { Box ,Flex,Text,Heading,Grid, GridItem ,Center  } from "@chakra-ui/react";
 import Sidebar from "./Sidebar";
 import ProductAddToCart from "./Cards.tsx";
-const Products = () => {
+import { useDispatch,useSelector } from "react-redux";
 
-    const [data,setData] = useState([])
+const Products = () => {
+const productData = useSelector((state) => state.products.productsData);
+  console.log(productData)
+  const [data, setData] = useState([])
+  
   useEffect(() => {
-    axios.get("http://localhost:8080/products/filter").then(({data}) => {
-    //   console.log(data)
-      setData(data)
-  })
-},[])
+    setData([...productData])
+  },[productData])
+
     return <Box w="80%" margin={"auto"} mt="30px">
                 <Heading textAlign="center" fontSize={"xl"}> All Products</Heading>
         <Flex  mt="10px" maxW="" >

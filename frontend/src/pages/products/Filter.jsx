@@ -11,13 +11,14 @@ import {
   Flex
 } from '@chakra-ui/react'
 import axios from "axios"
+import { useDispatch,useSelector } from "react-redux";
 
 const FIlter = () => {
   const [noOfBRands, SetNoOfBrands] = useState([]);
   const [noOfCategory, SetnoOfCategory] = useState([]);
   const [brandsFil, setBrandFil] = useState([]);
   const [categFil,setCategFil] = useState([])
-
+  const dispatch = useDispatch()
   useEffect(() => {
     axios.get("http://localhost:8080/products/brand").then(({ data }) => {
       SetNoOfBrands(data)
@@ -55,13 +56,13 @@ const FIlter = () => {
     }
   }
 
-  useEffect(() => {
-    console.log(brandsFil)
-  }, [brandsFil]);
+  // useEffect(() => {
+  //   console.log(brandsFil)
+  // }, [brandsFil]);
 
-useEffect(() => {
-    console.log(categFil)
-  }, [categFil]);
+// useEffect(() => {
+//     console.log(categFil)
+//   }, [categFil]);
 
   useEffect(() => {
     axios({
@@ -74,7 +75,12 @@ useEffect(() => {
   }
 })
   .then(function (response) {
-    console.log(response.data)
+    // console.log(response.data);
+    dispatch({
+      type: "getData",
+      payload:response.data
+    })
+
   });
   },[brandsFil,categFil])
   

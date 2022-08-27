@@ -21,7 +21,7 @@ const MiddleBar = () => {
       <Flex h="50px">
         <Center w="15%" border={"1px solid gray"} >
           <Box>
-             <FiEdit2 color="gray" />
+             <FiEdit2 color="gray"/>
           <Text>Edit</Text>
          </Box>
         </Center>
