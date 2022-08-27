@@ -7,7 +7,7 @@ const Products = () => {
 
     const [data,setData] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:8080/products").then(({data}) => {
+    axios.get("http://localhost:8080/products/filter").then(({data}) => {
     //   console.log(data)
       setData(data)
   })
