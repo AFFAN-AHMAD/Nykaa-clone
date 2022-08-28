@@ -9,7 +9,7 @@ const MiddleBar = () => {
       <Flex w="100%" justifyContent={"space-between"} mt={1} mb={3}>
           <Text fontWeight={600}>Affan Ahmad</Text>
           {/* <Text></Text> */}
-          <RiDeleteBin6Line color="gray"  />
+          <RiDeleteBin6Line   />
       </Flex>
       
       <Box w="70%" mb={3}>
@@ -25,9 +25,9 @@ const MiddleBar = () => {
           <Text>Edit</Text>
          </Box>
         </Center>
-        <Box w="85%" bg="#e62e77" h="50px" color="white">
-        <Heading fontSize={"md"} textAlign="center" p={2}>SHIP TO THIS ADDRESS </Heading>
-        </Box>
+        <Center w="85%" bg="#e62e77" h="50px" color="white">
+        <Heading fontSize={"md"} p={2}>SHIP TO THIS ADDRESS </Heading>
+        </Center>
       </Flex>
     </Box>
   </Box>;
