@@ -5,7 +5,7 @@ import Container2 from "./Container/Container2";
 import CountDownImg from "./CountDownImg";
 
 import TopBrandData from "./Container/TopBrandData"
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image,Text } from "@chakra-ui/react";
 import onlyAtNykaaData from "./Container/onlyAtNykaaData";
 import featureBrandData from "./Container/featureBrandData";
 import belowFeatureBrandData from "./Container/belowFeatureBrandData";
@@ -21,15 +21,28 @@ export default function MainPage() {
         >
 
             <Slider dataSlider={dataSlider1} />
-            <CountDownImg />
-            <Box fontSize="24px" textTransform="uppercase" color="#3f414d" fontWeight={500} w="12%" m="auto" mt="40px" mb="40px">Top Brands</Box>
+            <Box w="90%" m="auto">
+                <CountDownImg />
+
+            </Box>
+            <Box fontSize="24px" textTransform="uppercase" color="#3f414d" fontWeight={500} w="12%" m="auto" mt="40px" mb="40px">
+                <Text>
+                    Top Brands
+
+                </Text>
+            </Box>
             <Container data={TopBrandData} />
             <Box w="90%" m="auto" mt="40px" mb="10px">
                 <Image src={"https://images-static.nykaa.com/uploads/ea8b06f4-c904-462b-b47d-19a932bee718.gif?tr=w-1200,cm-pad_resize"} alt="images" />
 
             </Box>
 
-            <Box fontSize="24px" textTransform="uppercase" color="#3f414d" fontWeight={500} w="14%" m="auto" mt="40px" mb="40px">ONLY AT NYKAA</Box>
+            <Box fontSize="24px" textTransform="uppercase" color="#3f414d" fontWeight={500} w="14%" m="auto" mt="40px" mb="40px">
+                <Text>
+                    ONLY AT NYKAA
+
+                </Text>
+            </Box>
 
             <Container data={onlyAtNykaaData} />
             <Box w="100%" m="auto" mt="40px" mb="10px">
