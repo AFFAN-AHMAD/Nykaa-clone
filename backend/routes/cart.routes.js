@@ -8,6 +8,12 @@ cartRouter.get("/", async (req, res) => {
   res.send(data);
 });
 
+cartRouter.get("/:id", async (req, res) => {
+  const {id} = req.params;
+  const data = await CartModel.find({id});
+  res.send(data);
+})
+
 cartRouter.post("/", async (req, res) => {
   const newItem = await new CartModel(req.body);
   await newItem.save((err, data) => {
