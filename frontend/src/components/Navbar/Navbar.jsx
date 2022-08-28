@@ -1,8 +1,4 @@
-import React, { useState } from "react";
-import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
-import DrawerExample from "./DrawerExample";
-import { useDisclosure } from "@chakra-ui/react";
+
 import { Badge } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -106,7 +102,7 @@ const Navbar = () => {
 							<Link to="">Make</Link>
 						</p>
 						<div className={styles.sc2111}>
-							<div>
+							<div style={{background:"white"}}>
 								<h3>
 									<Link to="">Face</Link>
 								</h3>
@@ -197,7 +193,7 @@ const Navbar = () => {
 									<Link to="">Makeup Combos</Link>
 								</p>
 							</div>
-							<div>
+							<div style={{background:"white"}}>
 								<h3>
 									<Link to="/products">Lips</Link>
 								</h3>
@@ -279,7 +275,7 @@ const Navbar = () => {
 									<Link to="">Multi-Functional Makeup Palettes</Link>
 								</h3>
 							</div>
-							<div>
+							<div style={{background:"white"}}>
 								<h3>
 									<Link to="">Top Brands</Link>
 								</h3>
