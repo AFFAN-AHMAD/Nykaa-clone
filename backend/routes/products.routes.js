@@ -34,27 +34,28 @@
     productsRouter.get("/filter", async (req, res) => {
         let brand = req.headers.brand;
         let product_type = req.headers.product_type
-    
+        const  pageNo  = req.query.pageNo
+        console.log(pageNo,"paghe")
         if (!brand&&!product_type) {
-            const result = await ProductsModel.find()
+            const result = await ProductsModel.find().skip(9*(pageNo-1)).limit(9);
             return res.send(result)
         } else if (!brand && product_type) {
             let products_type = product_type.split(",")
             const arr = productList(products_type);
-               console.log(arr,"arr wihtout brand")
+            //    console.log(arr,"arr wihtout brand")
             const result = await ProductsModel.find({ $or:arr})
             return res.send(result)
         } else if (brand && !product_type) {
             let brands = brand.split(",");
             const arr = brandList(brands);
-            console.log(arr,"arr without product")
+            // console.log(arr,"arr without product")
              const result = await ProductsModel.find({ $or:arr})
             return res.send(result)
         }
         let brands = brand.split(",");
         let products_type = product_type.split(",")
         const queryArray = createQueries(products_type,brands)
-        console.log(queryArray,"with both");
+        // console.log(queryArray,"with both");
         const result =await ProductsModel.find({$or:queryArray})
         res.send(result)
     })
