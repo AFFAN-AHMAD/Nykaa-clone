@@ -349,5 +349,23 @@
 				
 			],
 			"description": "Nudestix Cream Lip + Cheek Pencil is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
+		},
+    {
+			"id": "23",
+			"name": "Maybelline New York Lifter Gloss - Topaz",
+			"price": "599",
+			"gram": "5.4ml",
+			"rating": "★★★★✩",
+			"product_type": "Lip Gloss",
+			"brand": "Maybelline",
+			"images": [
+				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_1.jpg",
+				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_2.jpg",
+				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_3.jpg",
+				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_4.jpg"
+			
+			],
+			"description": "Maybelline Lip Gloss is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
 		}
+	
   ]
