@@ -1,24 +1,40 @@
-import React from 'react'
-import Nav from '../addressPage/Nav'
-import PaymentLeftBar from './PaymentLeftBar'
-import PaymentMiddleBar from './PaymentMiddleBar'
-import PaymentRightBar from "./PaymentRightBar";
+import React from 'react';
+import PaymentLeftBar from './PaymentLeftBar';
+import PaymentMiddleBar from './PaymentMiddleBar';
+import RightBar from "../addressPage/Rightbar";
+import PaymentNabar from "./PaymentNavbar";
 
-import { Grid ,Box,Image } from '@chakra-ui/react';
+import {
+  Grid, Box, Image, Text, Alert,
+  AlertIcon,
+} from '@chakra-ui/react';
+
 export default function Payment() {
   return (
-    <Box bg="#f3f3f3" h="800px">
-        <Nav/>
-        <Grid templateColumns={'1fr 2fr 1.5fr'} w="85%" m={"auto"} mt={10} gap={10}>
-            <PaymentLeftBar/>
-            <PaymentMiddleBar/>
-            <PaymentRightBar/>
-        </Grid>
-        <Box w="80%" m="auto" mt="60px" >
-        <Image  src={process.env.PUBLIC_URL + `/LandingPageImgs/PaymentPageFooter.png`} alt="image"/>
+    <Box bg="#f3f3f3" h="800px" w="100%" m="auto">
+      <PaymentNabar/>
+      <Box w="80%" m="auto" mt="20px">
+        <Alert borderRadius={"10px"} colorScheme={"#e0edff"} status='info'>
+          <AlertIcon color={"blue"} />
+          Please use a digital payment method & help us ensure contactless delivery for your safety
+        </Alert>
+      </Box>
+      <Box w="80%" m="auto" p="15px">
+        <Text fontWeight={"600"}>
+          CHOOSE PAYMENT METHOD
+        </Text>
+      </Box>
+      <Grid templateColumns={'1fr 2.5fr 2fr'} w="80%" m={"auto"} gap={10}>
+        <PaymentLeftBar />
+        <PaymentMiddleBar />
+        <RightBar/>
 
-        </Box>
-      
+      </Grid>
+      <Box w="80%" m="auto" mt="60px" >
+        <Image src={process.env.PUBLIC_URL + `/LandingPageImgs/PaymentPageFooter.png`} alt="image" />
+
+      </Box>
+
     </Box>
   )
 }

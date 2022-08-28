@@ -1,16 +1,38 @@
 import React from "react";
-import { Box, Divider, Flex ,Text} from "@chakra-ui/react";
+import { Box, Divider,  Text } from "@chakra-ui/react";
 const PaymentLeftBar = () => {
-  return <Box bg="white"  pb={3} pl={3}> 
+  return <Box bg="white" w="280px" pb={3} pl={4}>
     <Box>
-      <Flex w="100%" h="40px" justifyContent={"space-between"} borderRight={"3px solid #e62e77"} p={1}>
-        <Text fontWeight={600} color="#e62e77" mt={1}>Saved Addresses</Text>
-        <Text color="gray" mt={1}>1</Text>
-    </Flex>
-    <Divider />
-      <Box h="40px" p={1}>
-        <Text fontWeight={600} color={"gray"} >New Address</Text>
-    </Box>
+      <Box h="50px" pt="15px" pb="15px" borderRight={"3px solid #e62e77"}>
+        <Text fontWeight={600} color="#e62e77" >Credit/Debit Card</Text>
+
+      </Box>
+      <Divider />
+      <Box h="50px" pt="15px" pb="15px" >
+        <Text fontWeight={600} color={"gray"} >UPI</Text>
+      </Box>
+      <Divider />
+
+      <Box h="50px" pt="15px" pb="15px">
+        <Text fontWeight={600} color={"gray"} >GooglePay</Text>
+      </Box>
+      <Divider />
+      <Box h="50px" pt="15px" pb="15px">
+        <Text fontWeight={600} color={"gray"} >Net Banking</Text>
+      </Box>
+      <Divider />
+      <Box h="50px" pt="15px" pb="15px">
+        <Text fontWeight={600} color={"gray"} >Mobile Wallets</Text>
+      </Box>
+      <Divider />
+      <Box h="50px" pt="15px" pb="15px">
+        <Text fontWeight={600} color={"gray"} >Cash on Delivery</Text>
+      </Box>
+      <Divider />
+      <Box h="50px" pt="15px" pb="15px">
+        <Text fontWeight={600} color={"gray"} >Gift Card</Text>
+      </Box>
+
     </Box>
   </Box>;
 };
