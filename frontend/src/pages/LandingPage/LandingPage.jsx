@@ -1,5 +1,6 @@
 import MainPage from "./MainPage/MainPage";
 import ScrollToTop from "react-scroll-to-top";
+
 import { ArrowUpIcon } from "@chakra-ui/icons";
 import Footer from "../../components/Footer/Footer";
 
