@@ -35,7 +35,7 @@
         let brand = req.headers.brand;
         let product_type = req.headers.product_type
         const  pageNo  = req.query.pageNo
-        console.log(pageNo,"paghe")
+        // console.log(pageNo,"paghe")
         if (!brand&&!product_type) {
             const result = await ProductsModel.find().skip(9*(pageNo-1)).limit(9);
             return res.send(result)
