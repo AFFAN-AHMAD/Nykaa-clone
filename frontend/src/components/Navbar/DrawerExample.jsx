@@ -46,13 +46,14 @@ function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
 				// border={"1px solid red"}
 				h="45px"
 				w="45px"
-				mt={"0.4vh"}
+				mt={"0.6vh"}
+				ml={"4px"}
 				marginLeft={hooks ? "0px" : "1vw"}
 			>
 				<Center
 					h="13px"
 					w="13px"
-					ml={-2}
+					ml={3}
 					borderRadius={"50%"}
 					bg="#e62e77"
 					fontSize={"10px"}
@@ -66,7 +67,7 @@ function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
 					zIndex={-2}
 					mt={-2}
 				>
-					<BsBag
+				<BsBag
 						onClick={onOpen}
 						ref={refBtn}
 					/>
