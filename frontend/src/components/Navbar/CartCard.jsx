@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Select } from "@chakra-ui/react";
+import { Box, Flex, Image, Select, useToast } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
@@ -7,6 +7,18 @@ import { removeCartApi, updateCartApi } from "../../store/cart/cart.actions";
 const CartCard = ({ item }) => {
   const dispatch = useDispatch();
   const quantity = useRef(item.quantity);
+  const toast = useToast();
+
+  const handleDelete = () => {
+    dispatch(removeCartApi(item.id))
+    return toast({
+      title: `${item.quantity} Item deleted from cart`,
+      status: "success",
+      position: "top",
+      isClosable: true,
+      color: "white",
+    });
+  }
 
   return (
     <Box p="5px" rounded="8px" border="1px solid lightgray">
@@ -23,7 +35,7 @@ const CartCard = ({ item }) => {
           justify="center"
           w="10%"
           cursor="pointer"
-          onClick={() => dispatch(removeCartApi(item.id))}
+          onClick={() => handleDelete()}
         >
           <RiDeleteBin6Line color="gray" fontSize="18px" />
         </Flex>

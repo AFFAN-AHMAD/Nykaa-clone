@@ -6,6 +6,9 @@ import {
   GET_ITEM_CART_ERROR,
   GET_ITEM_CART_LOADING,
   GET_ITEM_CART_SUCCESS,
+  GET_SINGLE_ITEM_CART_ERROR,
+  GET_SINGLE_ITEM_CART_LOADING,
+  GET_SINGLE_ITEM_CART_SUCCESS,
   REMOVE_FROM_CART_ERROR,
   REMOVE_FROM_CART_LOADING,
   REMOVE_FROM_CART_SUCCESS,
@@ -23,6 +26,17 @@ export const getItemApi = () => (dispatch) => {
       return dispatch({ type: GET_ITEM_CART_SUCCESS, payload: res.data });
     })
     .catch((r) => dispatch({ type: GET_ITEM_CART_ERROR }));
+};
+
+export const getSingleItemApi = (id) => (dispatch) => {
+  dispatch({ type: GET_SINGLE_ITEM_CART_LOADING });
+
+  axios
+    .get(`http://localhost:8080/cart/${id}`)
+    .then((res) => {
+      return dispatch({ type: GET_SINGLE_ITEM_CART_SUCCESS, payload: res.data });
+    })
+    .catch((r) => dispatch({ type: GET_SINGLE_ITEM_CART_ERROR }));
 };
 
 export const addCartApi = (item) => (dispatch) => {
