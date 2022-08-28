@@ -49,6 +49,7 @@ const CartCard = ({ item }) => {
               border="none"
               onFocus="none"
               outline="none"
+              cursor="pointer"
               onChange={(e) => {
                 quantity.current = e.target.value;
                 dispatch(updateCartApi(item.id,quantity.current))
