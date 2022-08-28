@@ -11,19 +11,19 @@ const Nav = () => {
         <Box overflowY="hidden" textAlign={"left"}  h="70px" p={2} pt={3} borderLeft={"1px solid darkgray "} >
           <Heading fontSize={"lg"} fontWeight="500" >1 - LOGIN</Heading>
           <Box overflowY="hidden" h="25px">
-            <Text fontSize={"md"} color="gray" >1/232525 loni road rabnjskfkuash fghadsfassdkj</Text>
+            <Text fontSize={"md"} color="gray" >1/2666 loni road</Text>
           </Box>
         </Box>
         
          <Box overflowY="hidden" textAlign={"left"}  h="70px"  pt={3} pl={2} pr={2}  borderLeft={"1px solid darkgray "} >
           <Heading fontSize={"lg"} fontWeight="500" color="#e62e77" >2-ADDRESS</Heading>
           <Box overflowY="hidden" h="25px">
-            <Text fontSize={"md"} color="gray" >1/232525 loni road rabnjskfkuash fghadsfassdkj</Text>
+            <Text fontSize={"md"} color="gray" >1/2666 loni road</Text>
           </Box>
         </Box>
-        <Center  h="70px" p={1} borderLeft={"1px solid darkgray "} borderRight={"1px solid darkgray "}>
+        <Box textAlign={"left"} alignContent={"center"} alignItems={"center"}  h="70px" pt={3} pl={2} borderLeft={"1px solid darkgray "} borderRight={"1px solid darkgray "}>
             <Heading fontSize={"lg"} fontWeight="500"> 3 - PAYMENT</Heading>
-        </Center>
+        </Box>
         
       </Grid> 
         
