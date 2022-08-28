@@ -22,7 +22,7 @@ const Pincode = () => {
   const [loader, setLoader] = useState(false);
 
   const handleCheck = async () => {
-    setLoader(!loader);
+    setLoader(true);
     if (pincode) {
       const res = await axios(
         `https://api.postalpincode.in/pincode/${pincode}`
@@ -30,9 +30,10 @@ const Pincode = () => {
       if (res.data[0].PostOffice) {
         setPlace(res.data[0].PostOffice[0].Division);
         setState(res.data[0].PostOffice[0].State);
-        setLoader(!loader);
+        setLoader(false);
         setToggle(!toggle);
       } else if (res.data[0].PostOffice == null) {
+        setLoader(loader => !loader);
         return toast({
           title: `Invalid Pincode`,
           status: "error",
@@ -42,6 +43,7 @@ const Pincode = () => {
         });
       }
     } else {
+      setLoader(loader => !loader);
       return toast({
         title: `Please Enter Pincode`,
         status: "warning",
@@ -58,15 +60,15 @@ const Pincode = () => {
   let delivery = date.toDateString().slice(0, 11);
 
   const handleChange = () => {
-    setToggle(!toggle)
-    setLoader(!loader)
-  }
+    setLoader(false);
+    setToggle(!toggle);
+  };
 
   return (
     <>
       {!toggle ? (
         <div>
-          { !loader ? (
+          {!loader ? (
             <div className="question">
               <Flex direction="column" p="0px 40px" gap="10px">
                 <Flex align="center" w="60%">
@@ -101,7 +103,7 @@ const Pincode = () => {
               </Flex>
             </div>
           ) : (
-            <Box p="20px">Fetching details...</Box>
+            <Box p="20px">Fetching delivery details...</Box>
           )}
         </div>
       ) : (

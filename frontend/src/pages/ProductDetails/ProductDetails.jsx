@@ -102,7 +102,7 @@ const ProductDetails = () => {
                   href="#"
                   _hover={{ textDecoration: "none", color: "#fc2779" }}
                 >
-                  Lipstick
+                  {item.product_type}
                 </BreadcrumbLink>
               </BreadcrumbItem>
             </Breadcrumb>
@@ -162,7 +162,7 @@ const ProductDetails = () => {
                 <Box color="gray">
                   MRP :{" "}
                   <span>
-                    <s>₹{item.price - 60}</s>
+                    <s>₹{+item.price + 120}</s>
                   </span>
                   <span className={styles.price}> ₹{item.price}</span>
                 </Box>
