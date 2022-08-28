@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React , {useState,useEffect} from "react";
 import { Badge,useDisclosure } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,10 +6,22 @@ import { FiUser } from "react-icons/fi";
 import { Box, Center } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css"
-import  DrawerExample  from  "./DrawerExample"
+import DrawerExample from "./DrawerExample"
+import axios from "axios";
 const Navbar = () => {
 	const [hooks, setHooks] = useState(false);
+	const [fresh, setFresh] = useState(false);
+	const [name, setName] = useState("Account");
 	const { isOpen, onOpen, onClose } = useDisclosure();
+
+	useEffect(() => {
+		axios.get("http://localhost:8080/getuser").then((res) => {
+			if (res.data.message === "user") {
+				setName(res.data.user.username);
+				console.log(res.data.name.username);
+			}
+		});
+	},[name]);
 	//   console.log(hooks);
 	const navigate = useNavigate();
 
@@ -73,14 +85,15 @@ const Navbar = () => {
 						<FiUser />
 					</Center>
 					<Link
-						to=""
+						to="/signup"
 						style={{
 							display: hooks === true ? "none" : "block",
 							marginLeft: "0.5vw",
 							marginTop: "0.7vh",
 						}}
 					>
-						Account
+						
+						{name}
 					</Link>
 					<DrawerExample
 						isOpen={isOpen}
