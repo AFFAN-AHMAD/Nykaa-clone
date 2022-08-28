@@ -1,11 +1,12 @@
 .sc1{
-    height:120vh;
+    height:90vh;
     border:1px solid black;
     border-radius: 10px;
     width:26%;
     margin :auto;
     margin-top: 10vh;
     background-color: white;
+    /* margin-bottom: 5vh; */
 }
 .sc1>h1{
     font-size: 1.2rem;

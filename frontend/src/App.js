@@ -12,17 +12,21 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
 import Payment from "./pages/PaymentPage/Payment"
 
+import Changepass from "./pages/Login/Changepass";
 function App() {
   return (
     <div style={{background:"whitesmoke"}} >
       <Routes>
         <Route path={"/"} element={<LandingPage />} />
-        <Route path={"/signup"} />
-        <Route path={"/login"} />
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path={"/products"} element={<Products/>} />
         <Route path={"/products/:id"} element={<ProductDetails />} />
         <Route path={"/address"} element={<Address />} />
         <Route path={"/payment"} element={<Payment/>} />
+        <Route path="/otp"  element={<Otp/>}/>
+        <Route path="/verifymail" element={<Verifymail/>}/> 
+        <Route path="/changepass" element={<Changepass/>}/> 
         <Route path={"*"} />
         <Route />
       </Routes>
