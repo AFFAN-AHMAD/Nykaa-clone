@@ -11,6 +11,7 @@ import {
 	Flex,
 } from "@chakra-ui/react";
 import axios from "axios";
+import { ComponentStyleConfig } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useToast } from "@chakra-ui/react";
 
@@ -23,6 +24,7 @@ const FIlter = () => {
 	// console.log(pageNo,"page")
 	const toast = useToast({
 		position: "top",
+		
 	});
 	const dispatch = useDispatch();
 	useEffect(() => {

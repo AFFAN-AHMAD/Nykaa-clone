@@ -1,371 +1,400 @@
 [
-    {
-      "id": "1",
-      "name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Teacher Tribe",
-      "price": "349",
-      "gram" : "2.1ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_5.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_6.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "2",
-      "name": "Nykaa Eyes On Me! 10-in-1 Eyeshadow Palette - Beachside Peach",
-      "price": "599",
-      "gram" : "12gm",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_2_.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_eyeshadow-palette_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_4_.jpg"
-      ],
-      "description": "Expiry Date: 15 June 2024--Country of Origin: China--Name of Mfg / Importer / Brand: FSN E-commerce Ventures Pvt Ltd,--Address of Mfg / Importer / Brand: 104 Vasan Udyog Bhavan Sun Mill Compound Senapati Bapat Marg, Lower Parel,-- Mumbai City Maharashtra - 400013"
-    },
-    {
-      "id": "3",
-      "name": "Nykaa Paintstix! Waterproof Matte Lipstick - Cheerleader Daze 16",
-      "price": "425",
-      "gram" : "3.5g",
-      "rating": "★★★✩✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_4.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "4",
-      "name": "Nykaa So Creme! Creamy Matte Lipstick - Wakeup Makeup",
-      "price": "299",
-      "gram" : "4.2gm",
-      "rating": "★★★★★",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_4.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_5.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "5",
-      "name": "Nykaa Matte to Last! Transfer Proof Liquid Lipstick -Kaveri - 20",
-      "price": "449",
-      "gram" : "5ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245706227_1_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/k/a/kaveri.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_matte-to-last_21.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/n/y/nyk_mtlll_re_04-reason-to-love_23.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "6",
-      "name": "Nykaa Sealed with a Kiss! Lipstick Palette - Limited Edition",
-      "price": "799",
-      "gram" : "13.5gm",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_5.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "7",
-      "name": "Nykaa Get Set Matte! Demi Matte Lip Cream Liquid Lipstick - GOALS",
-      "price": "349",
-      "gram" : "5ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245707804_1_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_5.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_4.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "8",
-      "name": "Nykaa Gloss it Up! High Shine Lip Gloss - 01 Honey Boo",
-      "price": "459",
-      "gram" : "5ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245705466_1_1_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/-/4-hand-swatch.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/h/o/honey-boo_01_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/3/-/3-reason-to-love.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "9",
-      "name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Soul Sister",
-      "price": "849",
-      "gram" : "2.1ml",
-      "rating": "★★★★★",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_5.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_6.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_7.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "10",
-      "name": "Nykaa Matte to Last! Mini Metallic Liquid Lipstick and Eyeshadow - Firework",
-      "price": "249",
-      "gram" : "1.2ml",
-      "rating": "★★★✩✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245711474_1_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/c/a/can_t-be-tamed_3_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/c/a/can_t-be-tamed_6.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/-/4-reason-to-love_3_74.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "11",
-      "name": "Nykaa So Matte! Mini Lipstick - 30 M Regal Ruby",
-      "price": "199",
-      "gram" : "1.5g",
-      "rating": "★★★✩✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_4.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "12",
-      "name": "Nykaa Matte to Last! Transfer Proof Liquid Lipstick - Bombae -01",
-      "price": "599",
-      "gram" : "2.1ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/9/8904245704209_1_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/b/o/bombae_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_matte-to-last.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/-/4-reason-to-love_1_4.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "13",
-      "name": "Nykaa Cosmetics All Day Matte Compact- Vanilla, So Creme Lipstick- Pep Talk & Black Magic Kajal Combo",
-      "price": "489",
-      "gram" : "2.1ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/1/_/1_648.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/2/_/2_551.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/3/_/3_541.jpg",
-        "https://www.nykaa.com/media/wysiwyg/8904245714246_reasonstolove.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "14",
-      "name": "Nykaa Sealed with a Kiss! Lipstick Palette - Flower Child 02",
-      "price": "999",
-      "gram" : "2.1ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_4.jpg"
-      ],
-      "description": "Nykaa's Sealed With a Kiss Lip Palette is all you need to pucker and pout. This multi-tasking palette features expertly coordinated color combinations of intensely pigmented matte lip cream that gives you the coverage of a matte lipstick and blendability of a blusher. Each shade stands alone or can be blended together for a customized shade. When you can't decide on just one lip shade to buy, don't. Just pick up one of these lip palettes instead."
-    },
-    {
-      "id": "15",
-      "name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Soul Sister",
-      "price": "339",
-      "gram" : "2.1ml",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Nykaa Cosmetics",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_5.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_7.jpg"
-      ],
-      "description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
-    },
-    {
-      "id": "16",
-      "name": "ZM Zayn & Myza Rich Matte Lipstick - Savage",
-      "price": "224",
-      "gram" : "4.2g",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "ZM Zayn & Myza",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/a/e/ae3e33c8904390201738_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/a/e/ae3e33c8904390201738_2.jpg"
-      ],
-      "description": "Stay pimple-free, naturally! ZM Naturals Neem & Tea Tree Serum is enriched with natural actives of neem and tea tree extracts that fight pimple-causing bacteria and reduce acne. Infused with salicylic acid that helps control oil. This lightweight, non-sticky potion of nature keeps your skin fresh and hydrated, all day long. It is suitable for both, day and night use."
-    },
-    {
-      "id": "17",
-      "name": "MyGlamm Manish Malhotra Beauty Hi-shine Lipstick - Cinnamon Crush",
-      "price": "556",
-      "gram" : "4.2g",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "MyGlamm",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_4.jpg"
-      ],
-      "description": "Stay pimple-free, naturally! ZM Naturals Neem & Tea Tree Serum is enriched with natural actives of neem and tea tree extracts that fight pimple-causing bacteria and reduce acne. Infused with salicylic acid that helps control oil. This lightweight, non-sticky potion of nature keeps your skin fresh and hydrated, all day long. It is suitable for both, day and night use."
-    },
-    {
-      "id": "18",
-      "name": "Maybelline New York Color Sensational Ultimattes Lipstick - More Ruby ",
-      "price": "549",
-      "gram" : "1.7g",
-      "rating": "★★★★✩",
-      "product_type": "Lipstick",
-      "brand": "Maybelline",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_1.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_4.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_3.jpg"
-      ],
-      "description": "With Maybelline New York's Color Sensational Ultimattes, more is more! That's more matte, more color intensity, and lightweight feel."
-    },
-    {
-      "id": "19",
-      "name": "Earth Rhythm Lip & Cheek Tint (Brandy)",
-      "price": "399",
-      "gram" : "5ml",
-      "rating": "★★★★✩",
-      "product_type": "Lip Balm",
-      "brand": "Earth Rhythm",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_2.jpg",
-        "https://images-static.nykaa.com/media/consc/consious.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_4.jpg"
-      ],
-      "description": "Multitasking products are a must for busy lifestyles and over-complicated beauty routines."
-    },
-    {
-      "id": "20",
-      "name": "Kay Beauty Matteinee Matte Lip Crayon Lipstick -Chartbuster",
-      "price": "839",
-      "gram" : "1.8g",
-      "rating": "★★★★✩",
-      "product_type": "Lip Crayon",
-      "brand": "Kay Beauty",
-      "images": [
-        "https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_2.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_3.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_4.jpg",
-        "https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_5.jpg"
-      ],
-      "description": "Kay Beauty Matteinee lip crayon combines unrivalled 18 hour long stay and extreme matte finish with ultra comfort."
-    },
-    {
-			"id": "21",
-			"name": "SUGAR Matte As Hell Crayon Lipstick With Free Sharpener - 07 Viola (07 Viola)",
-			"price": "719",
-			"gram": "2.8g",
-			"rating": "★★★★✩",
-			"product_type": "Lip Crayon",
-			"brand": "Sugar",
-			"images": [
-				"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259a.png",
-				"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259b.png",
-				"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259c.png"
-			],
-			"description": "Sugar Matte lip crayon combines unrivalled 18 hour long stay and extreme matte finish with ultra comfort."
-		},
-    {
-			"id": "22",
-			"name": "Nudestix Cream Lip + Cheek Pencil - Whisper",
-			"price": "2400",
-			"gram": "2.49g",
-			"rating": "★★★★✩",
-			"product_type": "Lip Crayon",
-			"brand": "Nudestix",
-			"images": [
-				"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_1.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_2.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_3.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_4.jpg"
-				
-			],
-			"description": "Nudestix Cream Lip + Cheek Pencil is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
-		},
-    {
-			"id": "23",
-			"name": "Maybelline New York Lifter Gloss - Topaz",
-			"price": "599",
-			"gram": "5.4ml",
-			"rating": "★★★★✩",
-			"product_type": "Lip Gloss",
-			"brand": "Maybelline",
-			"images": [
-				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_1.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_2.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_3.jpg",
-				"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_4.jpg"
-			
-			],
-			"description": "Maybelline Lip Gloss is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
-		}
-	
-  ]
+	{
+		"id": "1",
+		"name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Teacher Tribe",
+		"price": "349",
+		"gram": "2.1ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_5.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/9/8/983b1f9nykac00000076_6.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "2",
+		"name": "Nykaa Eyes On Me! 10-in-1 Eyeshadow Palette - Beachside Peach",
+		"price": "599",
+		"gram": "12gm",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_2_.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_eyeshadow-palette_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245710576_4_.jpg"
+		],
+		"description": "Expiry Date: 15 June 2024--Country of Origin: China--Name of Mfg / Importer / Brand: FSN E-commerce Ventures Pvt Ltd,--Address of Mfg / Importer / Brand: 104 Vasan Udyog Bhavan Sun Mill Compound Senapati Bapat Marg, Lower Parel,-- Mumbai City Maharashtra - 400013"
+	},
+	{
+		"id": "3",
+		"name": "Nykaa Paintstix! Waterproof Matte Lipstick - Cheerleader Daze 16",
+		"price": "425",
+		"gram": "3.5g",
+		"rating": "★★★✩✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/b/fb292a38904245703370_4.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "4",
+		"name": "Nykaa So Creme! Creamy Matte Lipstick - Wakeup Makeup",
+		"price": "299",
+		"gram": "4.2gm",
+		"rating": "★★★★★",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_4.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/2/7/279c3ef8904245710927_5.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "5",
+		"name": "Nykaa Matte to Last! Transfer Proof Liquid Lipstick -Kaveri - 20",
+		"price": "449",
+		"gram": "5ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245706227_1_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/k/a/kaveri.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_matte-to-last_21.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/n/y/nyk_mtlll_re_04-reason-to-love_23.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "6",
+		"name": "Nykaa Sealed with a Kiss! Lipstick Palette - Limited Edition",
+		"price": "799",
+		"gram": "13.5gm",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245714888_5.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "7",
+		"name": "Nykaa Get Set Matte! Demi Matte Lip Cream Liquid Lipstick - GOALS",
+		"price": "349",
+		"gram": "5ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245707804_1_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_5.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/b/6/b6fa2fa8904245707804_4.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "8",
+		"name": "Nykaa Gloss it Up! High Shine Lip Gloss - 01 Honey Boo",
+		"price": "459",
+		"gram": "5ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245705466_1_1_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/-/4-hand-swatch.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/h/o/honey-boo_01_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/3/-/3-reason-to-love.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "9",
+		"name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Soul Sister",
+		"price": "849",
+		"gram": "2.1ml",
+		"rating": "★★★★★",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_5.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_6.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/c/c/ccda1f9nykac00000072_7.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "10",
+		"name": "Nykaa Matte to Last! Mini Metallic Liquid Lipstick and Eyeshadow - Firework",
+		"price": "249",
+		"gram": "1.2ml",
+		"rating": "★★★✩✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245711474_1_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/c/a/can_t-be-tamed_3_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/c/a/can_t-be-tamed_6.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/-/4-reason-to-love_3_74.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "11",
+		"name": "Nykaa So Matte! Mini Lipstick - 30 M Regal Ruby",
+		"price": "199",
+		"gram": "1.5g",
+		"rating": "★★★✩✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/8/78c94768904245707149_4.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "12",
+		"name": "Nykaa Matte to Last! Transfer Proof Liquid Lipstick - Bombae -01",
+		"price": "599",
+		"gram": "2.1ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/9/8904245704209_1_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/b/o/bombae_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/j/a/janhvi_00_matte-to-last.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/-/4-reason-to-love_1_4.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "13",
+		"name": "Nykaa Cosmetics All Day Matte Compact- Vanilla, So Creme Lipstick- Pep Talk & Black Magic Kajal Combo",
+		"price": "489",
+		"gram": "2.1ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/1/_/1_648.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/2/_/2_551.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/3/_/3_541.jpg",
+			"https://www.nykaa.com/media/wysiwyg/8904245714246_reasonstolove.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "14",
+		"name": "Nykaa Sealed with a Kiss! Lipstick Palette - Flower Child 02",
+		"price": "999",
+		"gram": "2.1ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/a/7ac4d4d8904245706135_4.jpg"
+		],
+		"description": "Nykaa's Sealed With a Kiss Lip Palette is all you need to pucker and pout. This multi-tasking palette features expertly coordinated color combinations of intensely pigmented matte lip cream that gives you the coverage of a matte lipstick and blendability of a blusher. Each shade stands alone or can be blended together for a customized shade. When you can't decide on just one lip shade to buy, don't. Just pick up one of these lip palettes instead."
+	},
+	{
+		"id": "15",
+		"name": "Nykaa All Day Matte Waterproof, Transfer Proof, Mask Proof, 12H Liquid Lipstick - Soul Sister",
+		"price": "339",
+		"gram": "2.1ml",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Nykaa Cosmetics",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_5.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/f/5/f5711f9nykac00000074_7.jpg"
+		],
+		"description": "Fall in love with high-impact liquid lip colours that promise 12-hour long-wearing comfort. The Nykaa All Day Matte Liquid Lipstick range is here to give your lips a weightless matte finish with its moisturising formula. Take your pick from 10 shades that are an ode to the everyday women, who are unstoppable."
+	},
+	{
+		"id": "16",
+		"name": "ZM Zayn & Myza Rich Matte Lipstick - Savage",
+		"price": "224",
+		"gram": "4.2g",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "ZM Zayn & Myza",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/a/e/ae3e33c8904390201738_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/a/e/ae3e33c8904390201738_2.jpg"
+		],
+		"description": "Stay pimple-free, naturally! ZM Naturals Neem & Tea Tree Serum is enriched with natural actives of neem and tea tree extracts that fight pimple-causing bacteria and reduce acne. Infused with salicylic acid that helps control oil. This lightweight, non-sticky potion of nature keeps your skin fresh and hydrated, all day long. It is suitable for both, day and night use."
+	},
+	{
+		"id": "17",
+		"name": "MyGlamm Manish Malhotra Beauty Hi-shine Lipstick - Cinnamon Crush",
+		"price": "556",
+		"gram": "4.2g",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "MyGlamm",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/4/8408460MYGLA00000308_4.jpg"
+		],
+		"description": "Stay pimple-free, naturally! ZM Naturals Neem & Tea Tree Serum is enriched with natural actives of neem and tea tree extracts that fight pimple-causing bacteria and reduce acne. Infused with salicylic acid that helps control oil. This lightweight, non-sticky potion of nature keeps your skin fresh and hydrated, all day long. It is suitable for both, day and night use."
+	},
+	{
+		"id": "18",
+		"name": "Maybelline New York Color Sensational Ultimattes Lipstick - More Ruby ",
+		"price": "549",
+		"gram": "1.7g",
+		"rating": "★★★★✩",
+		"product_type": "Lipstick",
+		"brand": "Maybelline",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_4.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/4/5/45504c76902395803775_3.jpg"
+		],
+		"description": "With Maybelline New York's Color Sensational Ultimattes, more is more! That's more matte, more color intensity, and lightweight feel."
+	},
+	{
+		"id": "19",
+		"name": "Earth Rhythm Lip & Cheek Tint (Brandy)",
+		"price": "399",
+		"gram": "5ml",
+		"rating": "★★★★✩",
+		"product_type": "Lip Balm",
+		"brand": "Earth Rhythm",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_2.jpg",
+			"https://images-static.nykaa.com/media/consc/consious.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/7/6/76fba4eNYKEYM0000043_4.jpg"
+		],
+		"description": "Multitasking products are a must for busy lifestyles and over-complicated beauty routines."
+	},
+	{
+		"id": "20",
+		"name": "Kay Beauty Matteinee Matte Lip Crayon Lipstick -Chartbuster",
+		"price": "839",
+		"gram": "1.8g",
+		"rating": "★★★★✩",
+		"product_type": "Lip Crayon",
+		"brand": "Kay Beauty",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_4.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/0/d/0dfd2608904330900066_5.jpg"
+		],
+		"description": "Kay Beauty Matteinee lip crayon combines unrivalled 18 hour long stay and extreme matte finish with ultra comfort."
+	},
+	{
+		"id": "21",
+		"name": "SUGAR Matte As Hell Crayon Lipstick With Free Sharpener - 07 Viola (07 Viola)",
+		"price": "719",
+		"gram": "2.8g",
+		"rating": "★★★★✩",
+		"product_type": "Lip Crayon",
+		"brand": "Sugar",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259a.png",
+			"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259b.png",
+			"https://images-static.nykaa.com/media/catalog/product/d/8/d8c0bc88906090491259c.png"
+		],
+		"description": "Sugar Matte lip crayon combines unrivalled 18 hour long stay and extreme matte finish with ultra comfort."
+	},
+	{
+		"id": "22",
+		"name": "Nudestix Cream Lip + Cheek Pencil - Whisper",
+		"price": "2400",
+		"gram": "2.49g",
+		"rating": "★★★★✩",
+		"product_type": "Lip Crayon",
+		"brand": "Nudestix",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/8/5/854e0b1839174000109_4.jpg"
+		],
+		"description": "Nudestix Cream Lip + Cheek Pencil is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
+	},
+	{
+		"id": "23",
+		"name": "Maybelline New York Lifter Gloss - Topaz",
+		"price": "599",
+		"gram": "5.4ml",
+		"rating": "★★★★✩",
+		"product_type": "Lip Gloss",
+		"brand": "Maybelline",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/d/1/d1049a9041554583939_4.jpg"
+		],
+		"description": "Maybelline Lip Gloss is a multitasking pencil with ultra-creamy, soft color and liner for cheeks and lips."
+	},
+	{
+		"id": "24",
+		"name": "SUGAR Smudge Me Not Lip Duo - 02 Brink Of Pink (Plum Rose)",
+		"price": "539",
+		"gram": "3.5ml",
+		"rating": "★★★★✩",
+		"product_type": "Lip Gloss",
+		"brand": "Sugar",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/a/9/a918bc88904320701772.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/a/9/a918bc88904320701772a.png",
+			"https://images-static.nykaa.com/media/catalog/product/a/9/a918bc88904320701772b.png",
+			"https://images-static.nykaa.com/media/catalog/product/a/9/a918bc88904320701772c.png"
+		],
+		"description": "Ladies, guess what? The cult-favourites have now arrived in the all-new SUGAR Smudge Me Not Lip Duo! With the perfect vivid and matte finish of the Smudge Me Not Liquid Lipstick, the high shine of the moisturizing gloss and the perfect mix of matte and gloss in one go ' this lipstick and gloss duo is the next most-wanted thing."
+	},
+	{
+		"id": "25",
+		"name": "SUGAR Seal The Show Lip Primer",
+		"price": "539",
+		"gram": "1.4g",
+		"rating": "★★★★✩",
+		"product_type": "Lip Primer",
+		"brand": "Sugar",
+		"images": [
+			"https://images-static.nykaa.com/media/catalog/product/a/a/aa0584e8906090496834_1.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/a/a/aa0584e8906090496834_2.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/a/a/aa0584e8906090496834_3.jpg",
+			"https://images-static.nykaa.com/media/catalog/product/a/a/aa0584e8906090496834_4.jpg"  
+		],
+		"description": "Lipstick aficionados, listen up! The ultimate lip game-changer is here."
+	}
+]

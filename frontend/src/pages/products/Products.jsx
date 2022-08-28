@@ -103,6 +103,7 @@ const Products = () => {
 						>
 							&#8592;
 						</Button>
+						
 						{pageArr.map((ele) => (
 							<Button
 								w="40px"
