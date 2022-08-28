@@ -16,7 +16,7 @@ const PaymentMiddleBar = () => {
   >
     <Box h="50px" pt="15px" pb="15px">
       <Text fontWeight={"700"}>
-        Credit/Debit Card
+        Credit / Debit Card
       </Text>
     </Box>
     <Divider mb="20px" />

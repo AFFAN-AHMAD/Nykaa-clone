@@ -4,7 +4,7 @@ const PaymentLeftBar = () => {
   return <Box bg="white" w="280px" pb={3} pl={4}>
     <Box>
       <Box h="50px" pt="15px" pb="15px" borderRight={"3px solid #e62e77"}>
-        <Text fontWeight={600} color="#e62e77" >Credit/Debit Card</Text>
+        <Text fontWeight={600} color="#e62e77" >Credit / Debit Card</Text>
 
       </Box>
       <Divider />
