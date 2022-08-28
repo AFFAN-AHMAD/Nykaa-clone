@@ -44,6 +44,7 @@ const Products = () => {
 				w="80%"
 				margin={"auto"}
 				mt="30px"
+				// bg={"whitesmoke"}
 			>
 				<Heading
 					textAlign="center"
