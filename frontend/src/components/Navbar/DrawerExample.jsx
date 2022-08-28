@@ -1,22 +1,26 @@
 import {
-  Box,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
+	Box,
+	Drawer,
+	DrawerBody,
+	DrawerCloseButton,
+	DrawerContent,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerOverlay,
   Flex,
+  Center
 } from "@chakra-ui/react";
+import { Badge } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getItemApi } from "../../store/cart/cart.actions";
 import CartCard from "./CartCard";
 import { IoAlertCircleOutline, IoArrowForward } from "react-icons/io5";
 import { FcOk, FcInfo } from "react-icons/fc";
+import { BsBag } from "react-icons/bs";
 import styles from "./Cart.module.css";
 import EmptyBag from "./EmptyBag";
+
 import { Navigate, useNavigate } from "react-router-dom";
 
 function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
@@ -186,6 +190,7 @@ function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
       </Drawer>
     </>
   );
+
 }
 
 export default DrawerExample;
