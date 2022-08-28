@@ -87,14 +87,14 @@ const Products = () => {
 					m={"auto"}
 					textAlign="center"
 					p={3}
-					gap={5}
+					gap={10}
 					mt={5}
 					mb={5}
 				>
 					<>
 						<Button
-							w="60px"
-							h="60px"
+							w="40px"
+							h="40px"
 							fontSize={"xl"}
 							// border={"1px solid black"}
 							onClick={() => hanldePageDec()}
@@ -105,12 +105,13 @@ const Products = () => {
 						</Button>
 						{pageArr.map((ele) => (
 							<Button
-								w="60px"
-								h="60px"
+								w="40px"
+								h="40px"
 								fontSize={"xl"}
 								// border={"1px solid black"}
 								onClick={() => setpageNo(ele)}
-								// border={`${pageNo==ele}:blue:none`}
+								color={ele==pageNo?"white":"black"}
+								background={ele == pageNo ? "#e62e77" : "none"}
 								key={ele}
 								borderRadius="50%"
 							>
@@ -118,8 +119,8 @@ const Products = () => {
 							</Button>
 						))}
 						<Button
-							w="60px"
-							h="60px"
+							w="40px"
+							h="40px"
 							fontSize={"xl"}
 							// border={"1px solid black"}
 							// colorScheme={"white"}
