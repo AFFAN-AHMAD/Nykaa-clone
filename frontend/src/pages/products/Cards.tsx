@@ -88,19 +88,24 @@ function ProductAddToCart({ data }) {
 				maxW="xs"
 				borderWidth="1px"
 				rounded="md"
-				// shadow="lg"
+				shadow="lg"
 				position="relative"
 				textAlign={"center"}
 				w="225px"
 				cursor={"pointer"}
+				// border="1px solid red"
+				
 			>
 				<Image
 					src={data.images[0]}
 					alt={`Picture of ${data.name}`}
 					roundedTop="lg"
 					h="240px"
-					w="200px"
-					p="2"
+					w="225px"
+					// p="2"
+					// border={"1px solid blue"}
+					textAlign="center"
+					margin={"auto"}
 				/>
 
 				<Box p="2">

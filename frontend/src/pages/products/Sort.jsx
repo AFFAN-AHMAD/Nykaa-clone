@@ -19,14 +19,14 @@ import { useDispatch, useSelector } from "react-redux";
 const Sort = () => {
 	const productData = useSelector((state) => state.products.productsData);
 	const newArr = [...productData];
-	console.log(productData);
+	// console.log(productData);
 
 	const [id, setId] = useState([]);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
 		const arr = productData.map((ele) => ele.id);
-		console.log(arr);
+		// console.log(arr);
 		setId([...arr]);
 	}, [productData]);
 
