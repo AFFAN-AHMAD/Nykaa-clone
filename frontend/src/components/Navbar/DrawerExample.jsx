@@ -49,6 +49,7 @@ function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
 				mt={"0.6vh"}
 				ml={"4px"}
 				marginLeft={hooks ? "0px" : "1vw"}
+				cursor="pointer"
 			>
 				<Center
 					h="13px"
