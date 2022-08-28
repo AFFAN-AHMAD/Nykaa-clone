@@ -1,9 +1,12 @@
-
-import { Badge } from "@chakra-ui/react";
+import React , {useState} from "react";
+import { Badge,useDisclosure } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FiUser } from "react-icons/fi";
-import { Box ,Center} from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import styles from "./Navbar.module.css"
+import  DrawerExample  from  "./DrawerExample"
 const Navbar = () => {
 	const [hooks, setHooks] = useState(false);
 	const { isOpen, onOpen, onClose } = useDisclosure();
