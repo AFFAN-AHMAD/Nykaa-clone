@@ -68,6 +68,7 @@ const Nav = () => {
 					pl={2}
 					pr={2}
 					borderLeft={"1px solid darkgray "}
+					borderBottom={"3px solid #e62e77"}
 				>
 					<Heading
 						fontSize={"lg"}

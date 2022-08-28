@@ -9,6 +9,7 @@ import Navbar from "../src/components/Navbar/Navbar"
 import {Routes, Route} from "react-router-dom"
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <div >
