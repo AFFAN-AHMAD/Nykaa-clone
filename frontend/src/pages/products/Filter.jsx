@@ -11,6 +11,7 @@ import {
 	Flex,
 } from "@chakra-ui/react";
 import axios from "axios";
+import { ComponentStyleConfig } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useToast } from "@chakra-ui/react";
 
@@ -19,8 +20,11 @@ const FIlter = () => {
 	const [noOfCategory, SetnoOfCategory] = useState([]);
 	const [brandsFil, setBrandFil] = useState([]);
 	const [categFil, setCategFil] = useState([]);
+	const pageNo = useSelector((state) => state.page.pageNo);
+	// console.log(pageNo,"page")
 	const toast = useToast({
 		position: "top",
+		
 	});
 	const dispatch = useDispatch();
 	useEffect(() => {
@@ -69,6 +73,9 @@ const FIlter = () => {
 				brand: brandsFil,
 				product_type: categFil,
 			},
+			params: {
+				pageNo
+			}
 		}).then(function (response) {
 			dispatch({
 				type: "getData",
@@ -82,7 +89,7 @@ const FIlter = () => {
 				}
 			}, 2000);
 		});
-	}, [brandsFil, categFil]);
+	}, [brandsFil, categFil,pageNo]);
 
 	return (
 		<Stack bg="white">

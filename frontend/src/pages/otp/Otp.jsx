@@ -82,6 +82,19 @@ const Otp = () => {
           />
           <br></br>
           <input
+            placeholder="Username"
+            onChange={handleChange}
+            name="username"
+            style={{
+              border: "1px solid red",
+              height: "6vh",
+              margin: "2vh 0vh 0vh 4vh",
+              width: "85%",
+              textAlign: "center",
+              outline: "red",
+            }}
+          />
+          <br></br><input
             placeholder="Password"
             onChange={handleChange}
             name="password"
