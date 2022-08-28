@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import DrawerExample from "./DrawerExample";
 import { useDisclosure } from "@chakra-ui/react";
+import axios from "axios";
 const Navbar = () => {
   const [hooks, setHooks] = useState(false);
+  const [fresh, setFresh] = useState(false);
+  const [name, setName] = useState("Account");
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/getuser").then((res) => {
+      if (res.data.message === "user") {
+        setName(res.data.user.username);
+        console.log(res.data.name.username);
+      }
+    });
+  });
+
+  // setTimeout(() => {
+  //  setFresh(fresh => !fresh);
+  // //  console.log("hi")
+  // }, 1000);
   //   console.log(hooks);
   return (
     <div>
@@ -64,7 +81,7 @@ const Navbar = () => {
               width: "20px",
               marginLeft: "1vw",
               marginTop: "1vh",
-            }} 
+            }}
           />{" "}
           <Link
             to="/signup"
@@ -74,12 +91,17 @@ const Navbar = () => {
               marginTop: "0.7vh",
             }}
           >
-            Account
+            {name}
           </Link>
-          <DrawerExample isOpen={isOpen} onOpen={onOpen} onClose={onClose} hooks={hooks}/>
+          <DrawerExample
+            isOpen={isOpen}
+            onOpen={onOpen}
+            onClose={onClose}
+            hooks={hooks}
+          />
         </div>
         <div
-          style={{ height: "100%", width: "5vw",}}
+          style={{ height: "100%", width: "5vw" }}
           onClick={() => setHooks(false)}
         ></div>
       </div>

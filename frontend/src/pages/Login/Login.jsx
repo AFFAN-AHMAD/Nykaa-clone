@@ -16,12 +16,12 @@ const navigate = useNavigate()
       data: { ...data },
     })
       .then((res) => {
-        console.log(res.data)
-        if(res.data.message === "login suseccfull"){
+        console.log(res.data.message)
+        if(res.data.message === "login successfull"){
             navigate("/")
         }
         else{
-            alert("Unauthozie")
+            alert("Unauthorized")
         }
 
       })

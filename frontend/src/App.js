@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Changepass from "./pages/Login/Changepass";
 import Login from "./pages/Login/Login";
 import Verifymail from "./pages/Login/Verifymail";
 import Otp from "./pages/otp/Otp";
@@ -16,7 +17,9 @@ function App() {
   <Route path="/signup" element={<Signup/>}/>
   <Route path="/otp"  element={<Otp/>}/>
   <Route path="/login" element={<Login/>}/>
-  <Route path="/verifymail" element={<Verifymail/>}/>
+  <Route path="/verifymail" element={<Verifymail/>}/> 
+  <Route path="/changepass" element={<Changepass/>}/> 
+
 </Routes>
   </div>
   )
