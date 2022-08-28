@@ -10,10 +10,11 @@ import Navbar from "../src/components/Navbar/Navbar"
 import {Routes, Route} from "react-router-dom"
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
+import Payment from "./pages/PaymentPage/Payment"
 
 function App() {
   return (
-    <div >
+    <div style={{background:"whitesmoke"}} >
       <Routes>
         <Route path={"/"} element={<LandingPage />} />
         <Route path={"/signup"} />
@@ -21,7 +22,7 @@ function App() {
         <Route path={"/products"} element={<Products/>} />
         <Route path={"/products/:id"} element={<ProductDetails />} />
         <Route path={"/address"} element={<Address />} />
-        <Route path={"/payment"} />
+        <Route path={"/payment"} element={<Payment/>} />
         <Route path={"*"} />
         <Route />
       </Routes>
