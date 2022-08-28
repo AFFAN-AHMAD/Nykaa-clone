@@ -8,10 +8,11 @@
     background-color: white;
 }
 .sc1>h1{
-    font-size: 2.3rem;
-    margin-left: 5vh;
-    font-weight: 600;
-    margin-top: 0.5vh;
+    font-size: 1.2rem;
+    margin-left: 14vh;
+    font-weight: 500;
+    margin-top: -4vh;
+    /* color:grey */
 }
 .sc1>p{
     color:rgb(122, 122, 122);

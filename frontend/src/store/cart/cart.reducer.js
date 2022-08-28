@@ -5,6 +5,9 @@ import {
   GET_ITEM_CART_ERROR,
   GET_ITEM_CART_LOADING,
   GET_ITEM_CART_SUCCESS,
+  GET_SINGLE_ITEM_CART_ERROR,
+  GET_SINGLE_ITEM_CART_LOADING,
+  GET_SINGLE_ITEM_CART_SUCCESS,
   REMOVE_FROM_CART_ERROR,
   REMOVE_FROM_CART_LOADING,
   REMOVE_FROM_CART_SUCCESS,
@@ -17,6 +20,10 @@ let initialState = {
   getItemCart: {
     loading: false,
     error: false,
+  },
+  getSingleItemCart : {
+    loading : false,
+    error : false,
   },
   removeItemCart: {
     loading: false,
@@ -32,6 +39,7 @@ let initialState = {
     error: false,
   },
   cartData: [],
+  singleItem : {},
 };
 
 export const cartReducer = (state = initialState, { type, payload }) => {
@@ -62,6 +70,37 @@ export const cartReducer = (state = initialState, { type, payload }) => {
         ...state,
         getItemCart: {
           ...state.getItemCart,
+          loading: false,
+          error: true,
+        },
+      };
+    }
+    case GET_SINGLE_ITEM_CART_LOADING: {
+      return {
+        ...state,
+        getSingleItemCart: {
+          ...state.getSingleItemCart,
+          loading: true,
+          error: false,
+        },
+      };
+    }
+    case GET_SINGLE_ITEM_CART_SUCCESS: {
+      return {
+        ...state,
+        getSingleItemCart: {
+          ...state.getSingleItemCart,
+          loading: false,
+          error: false,
+        },
+        singleItem: payload,
+      };
+    }
+    case GET_SINGLE_ITEM_CART_ERROR: {
+      return {
+        ...state,
+        getSingleItemCart: {
+          ...state.getSingleItemCart,
           loading: false,
           error: true,
         },
