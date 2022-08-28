@@ -49,3 +49,14 @@
 .freeoffer{
     list-style-type: none;
 }
+
+.pincode {
+    color : #fc2779;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.free {
+    color : green;
+    font-weight: 500;
+}
