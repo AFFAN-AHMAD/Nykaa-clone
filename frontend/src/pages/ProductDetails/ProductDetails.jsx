@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import styles from "./ProductDetails.module.css";
 import { FcLikePlaceholder } from "react-icons/fc";
 import {
-  Box,
-  Image,
-  Button,
-  Flex,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  useToast,
-  Spinner,
+	Box,
+	Image,
+	Button,
+	Flex,
+	Breadcrumb,
+	BreadcrumbItem,
+	BreadcrumbLink,
+	useToast,
+	Spinner,
 } from "@chakra-ui/react";
 import data from "./data.json";
 import shades from "../../assets/shades.png";
@@ -25,50 +25,54 @@ import { useParams } from "react-router-dom";
 import Pincode from "./Pincode";
 import { useEffect } from "react";
 import { BallTriangle } from "react-loader-spinner";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const ProductDetails = () => {
-  const toast = useToast();
-  const { cartData } = useSelector((state) => state.cart);
-  const productId = useParams().id;
-  const [item] = useState(data[productId - 1]);
-  const [images] = useState(item.images);
-  const [curImage, setCurImage] = useState(item.images[0]);
-  const dispatch = useDispatch();
-  const store = cartData.map((el) => {
-    return el.id;
-  });
-  const [loader, setLoader] = useState(true);
+	const toast = useToast();
+	const { cartData } = useSelector((state) => state.cart);
+	const productId = useParams().id;
+	const [item] = useState(data[productId - 1]);
+	const [images] = useState(item.images);
+	const [curImage, setCurImage] = useState(item.images[0]);
+	const dispatch = useDispatch();
+	const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+	const [isLargerThan600] = useMediaQuery("(min-width: 700px)");
+	const [isSmallerThan300] = useMediaQuery("(max-width: 500px)");
+	const store = cartData.map((el) => {
+		return el.id;
+	});
+	const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader((loader) => !loader);
-    }, 1500);
-  }, []);
+	useEffect(() => {
+		setTimeout(() => {
+			setLoader((loader) => !loader);
+		}, 1500);
+	}, []);
 
-  const handleAddtoCart = () => {
-    if (store.includes(item.id)) {
-      return toast({
-        title: `Already added to the cart`,
-        status: "warning",
-        position: "top",
-        isClosable: true,
-        color: "white",
-      });
-    }
-    dispatch(addCartApi(item));
+	const handleAddtoCart = () => {
+		if (store.includes(item.id)) {
+			return toast({
+				title: `Already added to the cart`,
+				status: "warning",
+				position: "top",
+				isClosable: true,
+				color: "white",
+			});
+		}
+		dispatch(addCartApi(item));
 
-    return toast({
-      title: `Successfully added`,
-      status: "success",
-      position: "top",
-      isClosable: true,
-      color: "white",
-    });
-  };
+		return toast({
+			title: `Successfully added`,
+			status: "success",
+			position: "top",
+			isClosable: true,
+			color: "white",
+		});
+	};
 
-  return (
+	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
 			{!loader ? (
 				<Box mb="50px">
 					<Box className={styles.mainContainer}>
@@ -117,7 +121,7 @@ const ProductDetails = () => {
 						className={styles.container}
 						bg={"white"}
 					>
-						<Box className={styles.leftMain}>
+						<Box className={styles.leftMain} border={"1px solid red"}>
 							<Flex h="60%">
 								<Flex
 									padding="15px 15px 15px 0px"
@@ -286,7 +290,6 @@ const ProductDetails = () => {
 			<Footer />
 		</>
 	);
-
 };
 
 export default ProductDetails;

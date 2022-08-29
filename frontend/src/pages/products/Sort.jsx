@@ -108,7 +108,7 @@ const Sort = () => {
 		}
 	};
 	return (
-		<Box bg="white">
+		<Box bg="white" >
 			<Accordion
 				defaultIndex={[0]}
 				allowMultiple
