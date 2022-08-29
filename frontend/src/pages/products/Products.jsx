@@ -66,7 +66,7 @@ const Products = () => {
 		};
 	return (
 		<>
-			{/* <Navbar /> */}
+			<Navbar />`
 			<Box
 				w="80%"
 				m={"auto"}
@@ -133,7 +133,7 @@ const Products = () => {
 						<Grid
 							templateColumns={isLargerThan900?"repeat(3,1fr)":"repeat(2,1fr)"&&isLargerThan600?"repeat(2,1fr)":"repeat(1,1fr)"}
 							margin={"auto"}
-							className={styles.grid}
+							
 						>
 							{data.map((ele, i) => (
 								<ProductAddToCart
