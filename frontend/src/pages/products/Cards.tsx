@@ -15,6 +15,7 @@ import {
 import {Link,useNavigate} from "react-router-dom"
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const data = {
 	isNew: false,
@@ -77,6 +78,8 @@ function Rating({ rating, numReviews }: RatingProps) {
 function ProductAddToCart({ data }) {
 	// console.log(data)
 	const navigate = useNavigate()
+		const [isSmallerThan300] = useMediaQuery("(max-width: 500px)");
+
 	return (
 		<Flex
 			p={2}
@@ -91,10 +94,9 @@ function ProductAddToCart({ data }) {
 				shadow="lg"
 				position="relative"
 				textAlign={"center"}
-				w="225px"
+				w={isSmallerThan300?"180px":"225px"}
 				cursor={"pointer"}
 				// border="1px solid red"
-				
 			>
 				<Image
 					src={data.images[0]}

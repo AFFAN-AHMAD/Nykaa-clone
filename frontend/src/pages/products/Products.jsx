@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styles from "./Products.module.css"
 import {
 	Box,
 	Flex,
@@ -13,7 +14,7 @@ import {
 	BreadcrumbItem,
 	BreadcrumbLink,
 } from "@chakra-ui/react";
-
+import { useMediaQuery } from "@chakra-ui/react";
 import Sidebar from "./Sidebar";
 import ProductAddToCart from "./Cards.tsx";
 import { useDispatch, useSelector } from "react-redux";
@@ -30,6 +31,9 @@ const Products = () => {
 	const [loader, setLoader] = useState(true);
 	const [pageNo, setpageNo] = useState(1);
 	const [data, setData] = useState([]);
+	const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+	const [isLargerThan600] = useMediaQuery("(min-width: 700px)");
+	const [isSmallerThan300] = useMediaQuery("(max-width: 500px)");
   useEffect(() => {
 		setTimeout(() => {
 			setLoader((loader) => !loader);
@@ -62,7 +66,7 @@ const Products = () => {
 		};
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Box
 				w="80%"
 				m={"auto"}
@@ -113,8 +117,6 @@ const Products = () => {
 				<Box
 					w="80%"
 					margin={"auto"}
-					// mt="30px"
-					// bg={"whitesmoke"}
 				>
 					<Heading
 						textAlign="center"
@@ -125,12 +127,13 @@ const Products = () => {
 					</Heading>
 					<Flex
 						mt="10px"
-						maxW=""
+						
 					>
 						<Sidebar />
 						<Grid
-							templateColumns="repeat(3, 1fr)"
+							templateColumns={isLargerThan900?"repeat(3,1fr)":"repeat(2,1fr)"&&isLargerThan600?"repeat(2,1fr)":"repeat(1,1fr)"}
 							margin={"auto"}
+							className={styles.grid}
 						>
 							{data.map((ele, i) => (
 								<ProductAddToCart
@@ -140,6 +143,8 @@ const Products = () => {
 							))}
 						</Grid>
 					</Flex>
+
+					{/* pagination */}
 					<Center
 						m={"auto"}
 						textAlign="center"
@@ -194,6 +199,7 @@ const Products = () => {
 					</Center>
 				</Box>
 			) : (
+					// spinner
 				<Flex
 					h="70vh"
 					w="100vh"
