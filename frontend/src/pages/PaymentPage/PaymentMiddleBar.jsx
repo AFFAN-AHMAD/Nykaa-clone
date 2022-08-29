@@ -12,7 +12,14 @@ import {
 import { useToast } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
 const PaymentMiddleBar = () => {
+	 const dispatch = useDispatch();
+	const cart = useSelector((state) => state.cart.cartData);
+	const items = cart.reduce((ac, el) => {
+		return ac + +el.quantity;
+	}, 0);
   const navigate = useNavigate()
 	const maxLengthCheck = (object) => {
 		if (object.target.value.length > object.target.maxLength) {
@@ -30,7 +37,8 @@ const PaymentMiddleBar = () => {
   })
   const handlePay = () => {
     toast();
-    navigate("/")
+	axios.delete("http://localhost:8080/cart");
+	  navigate("/");
 }
 	return (
 		<Box
