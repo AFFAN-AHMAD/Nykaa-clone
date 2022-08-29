@@ -4,9 +4,9 @@ const ProductsModel = require("../models/Products.Model");
 
 const productsRouter = Router();
 // const permutation = require("../permutation")
-const createQueries = require("../logic/map");
-const productList = require("../logic/productList");
-const brandList = require("../logic/brandList");
+const createQueries = require("../controller/map");
+const productList = require("../controller/productList");
+const brandList = require("../controller/brandList");
 productsRouter.post("/", (req, res) => {});
 
 productsRouter.get("/", async (req, res) => {
