@@ -72,7 +72,7 @@ const ProductDetails = () => {
 
 	return (
 		<>
-			{/* <Navbar /> */}
+			<Navbar />
 			{!loader ? (
 				<Box mb="50px">
 					<Box className={styles.mainContainer}>
