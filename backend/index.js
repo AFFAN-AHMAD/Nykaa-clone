@@ -1,7 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 var cors = require('cors')
-
+// require("dotenv").config();
+const port = process.env.PORT||8080
 const cartRouter = require("./routes/cart.routes");
 const productsRouter = require("./routes/products.routes");
 const connection = require("./db");
@@ -24,7 +25,7 @@ app.use("/",UserRouter)
 app.use("/cart", cartRouter);
 
 
-app.listen(8080, async() => {
+app.listen(port, async() => {
     try {
       await connection
         console.log('server is running on http://localhost:8080')
