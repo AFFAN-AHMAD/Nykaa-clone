@@ -121,7 +121,7 @@ const ProductDetails = () => {
 						className={styles.container}
 						bg={"white"}
 					>
-						<Box className={styles.leftMain} border={"1px solid red"}>
+						<Box className={styles.leftMain} >
 							<Flex h="60%">
 								<Flex
 									padding="15px 15px 15px 0px"
