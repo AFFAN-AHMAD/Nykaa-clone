@@ -52,111 +52,114 @@ const Otp = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#f3f3f3" }}>
-      <div style={{ backgroundColor: "#f3f3f3" }}>
-        <hr />
-      </div>
-      <div className={styles.sc1}>
-        <img
-          style={{ height: "17px", margin: "4vh 0vh 0vh 4vh" }}
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVhNLTUnAPBQYMepezLlKgTmXwNHlHnKTdlFYGlgW56q9V9lJ3cpSiYLBrRgkRRuFSd0&usqp=CAU"
-          alt=""
-          onClick={()=>navigate("/")}
-        />
-        <h1>SIGN UP / REGISTER</h1>
+		<div style={{ backgroundColor: "#f3f3f3" }}>
+			<div style={{ backgroundColor: "#f3f3f3" }}>
+				<hr />
+			</div>
+			<div style={{ paddingBottom: "60px" }}>
+				<div className={styles.sc1}>
+					<img
+						style={{ height: "17px", margin: "4vh 0vh 0vh 4vh" }}
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVhNLTUnAPBQYMepezLlKgTmXwNHlHnKTdlFYGlgW56q9V9lJ3cpSiYLBrRgkRRuFSd0&usqp=CAU"
+						alt=""
+						onClick={() => navigate("/")}
+					/>
+					<h1>SIGN UP / REGISTER</h1>
 
-        <hr style={{ margin: "2vh 2vh 0vh 2vh" }} />
-        <form onSubmit={otpsend}>
-          <input
-            placeholder="Email or Phone Number"
-            onChange={handleChange}
-            name="email"
-            style={{
-              border: "1px solid red",
-              height: "6vh",
-              margin: "6vh 0vh 0vh 4vh",
-              width: "85%",
-              textAlign: "center",
-              outline: "red",
-            }}
-          />
-          <br></br>
-          <input
-            placeholder="Username"
-            onChange={handleChange}
-            name="username"
-            style={{
-              border: "1px solid red",
-              height: "6vh",
-              margin: "2vh 0vh 0vh 4vh",
-              width: "85%",
-              textAlign: "center",
-              outline: "red",
-            }}
-          />
-          <br></br><input
-            placeholder="Password"
-            onChange={handleChange}
-            name="password"
-            style={{
-              border: "1px solid red",
-              height: "6vh",
-              margin: "2vh 0vh 0vh 4vh",
-              width: "85%",
-              textAlign: "center",
-              outline: "red",
-            }}
-          />
-          <br></br>
-          <button
-            style={{
-              backgroundColor: "#fb2e79",
-              margin: "2vh 0vh 0vh 4vh",
-              color: "white",
-              width: "85%",
-              height: "6vh",
-              fontSize: "1.1rem",
-              fontWeight: "500",
-              borderRadius: "3px",
-            }}
-            onClick={sendotp}
-          >
-            Send OTP
-          </button>
-          <br></br>
-        </form>
-        <form onSubmit={Signup}>
-          <input
-            placeholder="Enter otp"
-            onChange={(e) => setotp(e.target.value)}
-            style={{
-              border: "1px solid red",
-              height: "6vh",
-              margin: "15vh 0vh 0vh 4vh",
-              width: "85%",
-              textAlign: "center",
-              outline: "red",
-            }}
-          ></input>
-          <br></br>
-          <button
-            style={{
-              backgroundColor: "#fb2e79",
-              margin: "2vh 0vh 0vh 4vh",
-              color: "white",
-              width: "85%",
-              height: "6vh",
-              fontSize: "1.1rem",
-              fontWeight: "500",
-              borderRadius: "3px",
-            }}
-          >
-            Signup
-          </button>
-        </form>
-      </div>
-    </div>
-  );
+					<hr style={{ margin: "2vh 2vh 0vh 2vh" }} />
+					<form onSubmit={otpsend}>
+						<input
+							placeholder="Email or Phone Number"
+							onChange={handleChange}
+							name="email"
+							style={{
+								border: "1px solid red",
+								height: "6vh",
+								margin: "6vh 0vh 0vh 4vh",
+								width: "85%",
+								textAlign: "center",
+								outline: "red",
+							}}
+						/>
+						<br></br>
+						<input
+							placeholder="Username"
+							onChange={handleChange}
+							name="username"
+							style={{
+								border: "1px solid red",
+								height: "6vh",
+								margin: "2vh 0vh 0vh 4vh",
+								width: "85%",
+								textAlign: "center",
+								outline: "red",
+							}}
+						/>
+						<br></br>
+						<input
+							placeholder="Password"
+							onChange={handleChange}
+							name="password"
+							style={{
+								border: "1px solid red",
+								height: "6vh",
+								margin: "2vh 0vh 0vh 4vh",
+								width: "85%",
+								textAlign: "center",
+								outline: "red",
+							}}
+						/>
+						<br></br>
+						<button
+							style={{
+								backgroundColor: "#fb2e79",
+								margin: "2vh 0vh 0vh 4vh",
+								color: "white",
+								width: "85%",
+								height: "6vh",
+								fontSize: "1.1rem",
+								fontWeight: "500",
+								borderRadius: "3px",
+							}}
+							onClick={sendotp}
+						>
+							Send OTP
+						</button>
+						<br></br>
+					</form>
+					<form onSubmit={Signup}>
+						<input
+							placeholder="Enter otp"
+							onChange={(e) => setotp(e.target.value)}
+							style={{
+								border: "1px solid red",
+								height: "6vh",
+								margin: "15vh 0vh 0vh 4vh",
+								width: "85%",
+								textAlign: "center",
+								outline: "red",
+							}}
+						></input>
+						<br></br>
+						<button
+							style={{
+								backgroundColor: "#fb2e79",
+								margin: "2vh 0vh 0vh 4vh",
+								color: "white",
+								width: "85%",
+								height: "6vh",
+								fontSize: "1.1rem",
+								fontWeight: "500",
+								borderRadius: "3px",
+							}}
+						>
+							Signup
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Otp;

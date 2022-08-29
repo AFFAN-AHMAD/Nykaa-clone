@@ -28,7 +28,10 @@ cartRouter.post("/", async (req, res) => {
     }
   });
 });
-
+cartRouter.delete("/", async (req, res) => {
+	await CartModel.remove();
+	res.send("Deleted successfully");
+});
 cartRouter.delete("/:itemid", async (req, res) => {
   const id = req.params.itemid;
   await CartModel.deleteOne({ id });

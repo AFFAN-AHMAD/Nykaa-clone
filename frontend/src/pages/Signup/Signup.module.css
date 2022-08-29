@@ -1,10 +1,10 @@
 .sc1{
-    height:120vh;
+    height:100vh;
     border:1px solid black;
     border-radius: 10px;
     width:26%;
     margin :auto;
-    margin-top: 10vh;
+    margin-top: 3vh;
     background-color: white;
 }
 .sc1>h1{
