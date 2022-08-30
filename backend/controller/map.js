@@ -44,7 +44,7 @@ const createQueries = (arrOfProducts,arrOfBrands) => {
 	// console.log(queryArr[0]["$and"]);
 	return queryArr;
 }
-createQueries(arrOfProducts,arrOfBrands)
+// createQueries(arrOfProducts,arrOfBrands)
 
 module.exports =createQueries
 		// console.log(map);
