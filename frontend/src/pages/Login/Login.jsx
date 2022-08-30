@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
 import axios from "axios";
-import {Link, useNavigate} from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import {useToast} from "@chakra-ui/react"
 const Login = () => {
+	const toast = useToast()
   const [data, setData] = useState({});
 const navigate = useNavigate()
 
@@ -17,11 +19,24 @@ const navigate = useNavigate()
     })
       .then((res) => {
         console.log(res.data.message)
-        if(res.data.message === "login successfull"){
+		  if (res.data.message === "login successfull") {
+			toast({
+				title: `login successful`,
+				status: "success",
+				position: "top",
+				isClosable: true,
+				color: "white",
+			});
             navigate("/")
         }
         else{
-            alert("Unauthorized")
+         toast({
+							title: `unauthorized`,
+							status: "error",
+							position: "top",
+							isClosable: true,
+							color: "white",
+						});
         }
 
       })

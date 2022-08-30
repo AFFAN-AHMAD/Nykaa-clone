@@ -2,48 +2,60 @@
 
 
 
-// let arr2 =  [ 'Kay Beauty', 'Earth Rhythm', 'nykaa cosmetics' ];
-// let arr1 = [ 'lip balm', 'lip crayon' ,"lipstick"]
-const createQueries = (arr1,arr2) => {
-    const map = new Map;
-    for (let i = 0; i < arr1.length; i++){
-    for (let j = 0; j < arr2.length; j++){
-        if (map.has(arr1[i])) {
-            let temp = map.get(arr1[i]);
-            temp.push(arr2[j])
-            map.set(arr1[i],temp)
-        } else {
-              let temp = []
-            temp.push(arr2[j])
-            map.set(arr1[i],temp)
-        }
-    }
-    }
-    // console.log(map)
-let newSArr = [];
+// let arrOfProducts = [ 'lip balm', 'lipstick']
+// let arrOfBrands =  [ 'Kay Beauty', 'Earth Rhythm', 'nykaa cosmetics' ];
+const createQueries = (arrOfProducts,arrOfBrands) => {
+	const map = new Map();
+	for (let i = 0; i < arrOfProducts.length; i++) {
+		for (let j = 0; j < arrOfBrands.length; j++) {
+			if (map.has(arrOfProducts[i])) {
+				let temp = map.get(arrOfProducts[i]);
+				temp.push(arrOfBrands[j]);
+				map.set(arrOfProducts[i], temp);
+			} else {
+				let temp = [];
+				temp.push(arrOfBrands[j]);
+				map.set(arrOfProducts[i], temp);
+			}
+		}
+	}
+	// console.log(map)
+	let combinationsArray = [];
 
-for ([key,values] of map) {
-    values.forEach((e) => {
-        newSArr.push({ [key]: e })
-    })
+	for ([key, values] of map) {
+		values.forEach((e) => {
+			combinationsArray.push({ [key]: e });
+		});
+	}
+	// console.log(combinationsArray)
+	const queryArr = [];
+	combinationsArray.map((ele) => {
+		for (x in ele) {
+			queryArr.push({
+				$and: [{ product_type: `${x}` }, { brand: `${ele[x]}` }],
+			});
+		}
+	});
+	
+	for (let i = 0; i < queryArr.length; i++){
+	    console.log(queryArr[i]['$and'])
+	}
+	// console.log(queryArr)
+	// console.log(queryArr[0]["$and"]);
+	return queryArr;
 }
-console.log(newSArr)
-const queryArr = []
-newSArr.map((ele) => {
-    for (x in ele) {
-        queryArr.push({ $and: [{ product_type: `${x}` }, { brand: `${ele[x]}` }] });
-    }
-   
-})
-    // console.log(queryArr[0]["$and"])
-    return queryArr
-}
-// createQueries(arr1,arr2)
+createQueries(arrOfProducts,arrOfBrands)
 
-module.exports = createQueries
+module.exports =createQueries
+		// console.log(map);
+		// for (let i = 0; i < queryArr.length; i++){
+		//     console.log(queryArr[i]['$and'])
+		// }
+		// console.log(queryArr)
 
-// console.log(map);
-// for (let i = 0; i < queryArr.length; i++){
-//     console.log(queryArr[i]['$and'])
-// }
-// console.log(queryArr)
+
+    
+
+
+
+

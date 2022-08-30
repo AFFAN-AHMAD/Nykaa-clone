@@ -2,12 +2,14 @@ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Otp.module.css";
-
+import { useToast } from "@chakra-ui/react";
 const Otp = () => {
   const [otp, setotp] = React.useState("");
   const [data, setData] = React.useState({});
   const [getotp, setGetotp] = React.useState("");
   const navigate = useNavigate();
+  	const toast = useToast();
+
   const handleChange = (e) => {
     setData({
       ...data,
@@ -31,9 +33,21 @@ const Otp = () => {
     console.log("singup");
 
     if (Number(otp) !== getotp) {
-      return alert("otp is not correct");
+      return toast({
+				title: `enter a valid otp`,
+				status: "error",
+				position: "top",
+				isClosable: true,
+				color: "white",
+			});
     } else {
-      alert("Go to log in page");
+       toast({
+					title: `Signup successful`,
+					status: "success",
+					position: "top",
+					isClosable: true,
+					color: "white",
+				});
       axios({
         method: "post",
         url: "http://localhost:8080/signup",
