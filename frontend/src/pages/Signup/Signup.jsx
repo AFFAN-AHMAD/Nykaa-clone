@@ -6,6 +6,7 @@ import styles from "./Signup.module.css";
 
 const Signup = () => {
   const navigate = useNavigate();
+	
 
   return (
     <div style={{ backgroundColor: "#f3f3f3" }}>
