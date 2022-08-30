@@ -27,7 +27,7 @@ productsRouter.get("/category", async (req, res) => {
 // to create list of brand available
 productsRouter.get("/brand", async (req, res) => {
 	const result = await ProductsModel.aggregate([{ $group: { _id: "$brand" } }]);
-	const brand = result.map((ele) => ele._id);
+	const brand = result.map((ele) => ele._id)
 	res.status(200).send(brand);
 });
 
@@ -121,4 +121,6 @@ module.exports = productsRouter;
 // console.log(queries)
 // const result = await ProductsModel.find({$or:[{product_type:"lip balm"},{product_type:"lip crayon"}]});
 // const result = await ProductsModel.find({ $or: [{ $and: [{ product_type: "lip crayon" }, { brand: "Kay Beauty" }] }, { $and: [{ product_type: "lip balm" }, { brand: "Earth Rhythm" }] }] })
-// const result = await ProductsModel.find({$or:[{$and:[{product_type:"lip crayon"},{brand:"Earth Rhythm"}]},{$and:[{product_type:"lip balm"},{brand:"Kay Beauty"}]}]})
+// const result = await ProductsModel.find({$or:[ {$and:[{product_type:"lip crayon"},{ brand: "Earth Rhythm" }]},
+// { $and: [{ product_type: "lip balm" }, { brand: "Kay Beauty" }]} ]
+// })

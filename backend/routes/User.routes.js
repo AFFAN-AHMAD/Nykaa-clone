@@ -8,9 +8,8 @@ const UserRouter = Router()
 
 let flag = false
 const otpArray = [];
-const email = "skashyap061998@gmail.com";
-const password = "yqtzxlhowdgqpdmj";
-
+const password = process.env.PASSWORD;
+const email = process.env.EMAIL
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
