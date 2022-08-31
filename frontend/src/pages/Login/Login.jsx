@@ -1,60 +1,57 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom"
-import {useToast} from "@chakra-ui/react"
+import { Link, useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 const Login = () => {
-	const toast = useToast()
-  const [data, setData] = useState({});
-const navigate = useNavigate()
+	const toast = useToast();
+	const [data, setData] = useState({});
+	const navigate = useNavigate();
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(data, " Sent data");
+		axios({
+			method: "post",
+			url: "https://nykaclonebymyteam.herokuapp.com/login",
+			data: { ...data },
+		})
+			.then((res) => {
+				console.log(res.data.message);
+				if (res.data.message === "login successfull") {
+					toast({
+						title: `login successful`,
+						status: "success",
+						position: "top",
+						isClosable: true,
+						color: "white",
+					});
+					navigate("/");
+				} else {
+					toast({
+						title: `unauthorized`,
+						status: "error",
+						position: "top",
+						isClosable: true,
+						color: "white",
+					});
+				}
+			})
+			.catch((err) => console.log(err, "err"));
+	};
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(data, " Sent data");
-    axios({
-      method: "post",
-      url: "http://localhost:8080/login",
-      data: { ...data },
-    })
-      .then((res) => {
-        console.log(res.data.message)
-		  if (res.data.message === "login successfull") {
-			toast({
-				title: `login successful`,
-				status: "success",
-				position: "top",
-				isClosable: true,
-				color: "white",
-			});
-            navigate("/")
-        }
-        else{
-         toast({
-							title: `unauthorized`,
-							status: "error",
-							position: "top",
-							isClosable: true,
-							color: "white",
-						});
-        }
-
-      })
-      .catch((err) => console.log(err, "err"));
-  };
-
-  const handleChange = (e) => {
-    setData({
-      ...data,
-      [e.target.name]: e.target.value,
-    });
-  };
-  return (
+	const handleChange = (e) => {
+		setData({
+			...data,
+			[e.target.name]: e.target.value,
+		});
+	};
+	return (
 		<div>
 			<div>
 				<hr />
 			</div>
-			<div style={{paddingBottom:"60px"}}>
+			<div style={{ paddingBottom: "60px" }}>
 				<div className={styles.sc1}>
 					<img
 						style={{ height: "17px", margin: "4vh 0vh 0vh 4vh" }}

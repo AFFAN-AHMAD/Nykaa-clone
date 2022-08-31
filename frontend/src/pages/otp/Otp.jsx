@@ -4,68 +4,68 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Otp.module.css";
 import { useToast } from "@chakra-ui/react";
 const Otp = () => {
-  const [otp, setotp] = React.useState("");
-  const [data, setData] = React.useState({});
-  const [getotp, setGetotp] = React.useState("");
-  const navigate = useNavigate();
-  	const toast = useToast();
+	const [otp, setotp] = React.useState("");
+	const [data, setData] = React.useState({});
+	const [getotp, setGetotp] = React.useState("");
+	const navigate = useNavigate();
+	const toast = useToast();
 
-  const handleChange = (e) => {
-    setData({
-      ...data,
-      [e.target.name]: e.target.value,
-    });
-  };
+	const handleChange = (e) => {
+		setData({
+			...data,
+			[e.target.name]: e.target.value,
+		});
+	};
 
-  const sendotp = () => {
-    console.log("sendotp");
-    axios
-      .post("http://localhost:8080/getotp", data)
-      .then((res) => {
-        console.log(res.data.otp);
-        setGetotp(res.data.otp);
-      })
-      .catch((err) => console.log(err, "err"));
-  };
+	const sendotp = () => {
+		console.log("sendotp");
+		axios
+			.post("https://nykaclonebymyteam.herokuapp.com/getotp", data)
+			.then((res) => {
+				console.log(res.data.otp);
+				setGetotp(res.data.otp);
+			})
+			.catch((err) => console.log(err, "err"));
+	};
 
-  const Signup = (e) => {
-    e.preventDefault();
-    console.log("singup");
+	const Signup = (e) => {
+		e.preventDefault();
+		console.log("singup");
 
-    if (Number(otp) !== getotp) {
-      return toast({
+		if (Number(otp) !== getotp) {
+			return toast({
 				title: `enter a valid otp`,
 				status: "error",
 				position: "top",
 				isClosable: true,
 				color: "white",
 			});
-    } else {
-       toast({
-					title: `Signup successful`,
-					status: "success",
-					position: "top",
-					isClosable: true,
-					color: "white",
-				});
-      axios({
-        method: "post",
-        url: "http://localhost:8080/signup",
-        data: { ...data },
-      })
-        .then((res) => {
-          console.log(res);
-          navigate("/login");
-        })
-        .catch((err) => console.log(err, "err"));
-    }
-  };
+		} else {
+			toast({
+				title: `Signup successful`,
+				status: "success",
+				position: "top",
+				isClosable: true,
+				color: "white",
+			});
+			axios({
+				method: "post",
+				url: "https://nykaclonebymyteam.herokuapp.com/signup",
+				data: { ...data },
+			})
+				.then((res) => {
+					console.log(res);
+					navigate("/login");
+				})
+				.catch((err) => console.log(err, "err"));
+		}
+	};
 
-  const otpsend = (e) => {
-    e.preventDefault();
-  };
+	const otpsend = (e) => {
+		e.preventDefault();
+	};
 
-  return (
+	return (
 		<div style={{ backgroundColor: "#f3f3f3" }}>
 			<div style={{ backgroundColor: "#f3f3f3" }}>
 				<hr />

@@ -24,16 +24,19 @@ const FIlter = () => {
 	// console.log(pageNo,"page")
 	const toast = useToast({
 		position: "top",
-		
 	});
 	const dispatch = useDispatch();
 	useEffect(() => {
-		axios.get("http://localhost:8080/products/brand").then(({ data }) => {
-			SetNoOfBrands(data);
-		});
-		axios.get("http://localhost:8080/products/category").then(({ data }) => {
-			SetnoOfCategory(data);
-		});
+		axios
+			.get("https://nykaclonebymyteam.herokuapp.com/products/brand")
+			.then(({ data }) => {
+				SetNoOfBrands(data);
+			});
+		axios
+			.get("https://nykaclonebymyteam.herokuapp.com/products/category")
+			.then(({ data }) => {
+				SetnoOfCategory(data);
+			});
 	}, []);
 
 	const handleCateg = (e) => {
@@ -67,15 +70,15 @@ const FIlter = () => {
 	useEffect(() => {
 		axios({
 			method: "get",
-			url: "http://localhost:8080/products/filter",
+			url: "https://nykaclonebymyteam.herokuapp.com/products/filter",
 			responseType: "stream",
 			headers: {
 				brand: brandsFil,
 				product_type: categFil,
 			},
 			params: {
-				pageNo
-			}
+				pageNo,
+			},
 		}).then(function (response) {
 			dispatch({
 				type: "getData",
@@ -89,7 +92,7 @@ const FIlter = () => {
 				}
 			}, 2000);
 		});
-	}, [brandsFil, categFil,pageNo]);
+	}, [brandsFil, categFil, pageNo]);
 
 	return (
 		<Stack bg="white">

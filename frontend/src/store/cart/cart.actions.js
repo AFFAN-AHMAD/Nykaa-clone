@@ -21,7 +21,7 @@ export const getItemApi = () => (dispatch) => {
   dispatch({ type: GET_ITEM_CART_LOADING });
 
   axios
-    .get("http://localhost:8080/cart")
+    .get("https://nykaclonebymyteam.herokuapp.com/cart")
     .then((res) => {
       return dispatch({ type: GET_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -32,7 +32,7 @@ export const getSingleItemApi = (id) => (dispatch) => {
   dispatch({ type: GET_SINGLE_ITEM_CART_LOADING });
 
   axios
-    .get(`http://localhost:8080/cart/${id}`)
+    .get(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`)
     .then((res) => {
       return dispatch({ type: GET_SINGLE_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -43,7 +43,7 @@ export const addCartApi = (item) => (dispatch) => {
   dispatch({ type: ADD_TO_CART_LOADING });
 
   axios
-    .post("http://localhost:8080/cart", {
+    .post("https://nykaclonebymyteam.herokuapp.com/cart", {
       name: item.name,
       gram: item.gram,
       image: item.images[0],
@@ -62,7 +62,7 @@ export const removeCartApi = (id) => (dispatch) => {
   dispatch({ type: REMOVE_FROM_CART_LOADING });
 
   axios
-    .delete(`http://localhost:8080/cart/${id}`)
+    .delete(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`)
     .then((res) => dispatch({ type: REMOVE_FROM_CART_SUCCESS, payload: id }))
 
     .catch((r) => dispatch({ type: REMOVE_FROM_CART_ERROR }));
@@ -71,7 +71,7 @@ export const removeCartApi = (id) => (dispatch) => {
 export const updateCartApi = (id, quantity) => (dispatch) => {
   dispatch({ type: UPDATE_CART_LOADING });
   axios
-    .put(`http://localhost:8080/cart/${id}`, {
+    .put(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`, {
       quantity,
     })
     .then((res) => {

@@ -1,30 +1,34 @@
-
-import axios from 'axios'
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import axios from "axios";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
-import {useToast} from "@chakra-ui/react"
+import { useToast } from "@chakra-ui/react";
 
 const Verifymail = () => {
-const navigate = useNavigate()
-    const [email,setEmail]= React.useState('')
+	const navigate = useNavigate();
+	const [email, setEmail] = React.useState("");
 
-  const toast = useToast()
-// console.log("refesehd")
- const handleSubmit=()=>{
-       console.log("data:", email)
-    axios.post("http://localhost:8080/verifyemail",{email})
-    .then((res)=>{console.log(res) ;
-        if(res.data.verify)  navigate("/changepass")
-		if (!res.data.verify) toast({
-			title: "invalid email",
-			status:"error"
-		})
-       
-    })
-    .catch((err)=>{console.log(err);alert("invalid email");})
- }
-  return (
+	const toast = useToast();
+	// console.log("refesehd")
+	const handleSubmit = () => {
+		console.log("data:", email);
+		axios
+			.post("https://nykaclonebymyteam.herokuapp.com/verifyemail", { email })
+			.then((res) => {
+				console.log(res);
+				if (res.data.verify) navigate("/changepass");
+				if (!res.data.verify)
+					toast({
+						title: "invalid email",
+						status: "error",
+					});
+			})
+			.catch((err) => {
+				console.log(err);
+				alert("invalid email");
+			});
+	};
+	return (
 		<div style={{ backgroundColor: "#f3f3f3" }}>
 			<div style={{ backgroundColor: "#f3f3f3" }}>
 				<hr />
@@ -73,6 +77,6 @@ const navigate = useNavigate()
 			</div>
 		</div>
 	);
-}
+};
 
-export default Verifymail
+export default Verifymail;

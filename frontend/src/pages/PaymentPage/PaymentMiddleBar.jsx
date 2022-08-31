@@ -15,12 +15,12 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 const PaymentMiddleBar = () => {
-	 const dispatch = useDispatch();
+	const dispatch = useDispatch();
 	const cart = useSelector((state) => state.cart.cartData);
 	const items = cart.reduce((ac, el) => {
 		return ac + +el.quantity;
 	}, 0);
-  const navigate = useNavigate()
+	const navigate = useNavigate();
 	const maxLengthCheck = (object) => {
 		if (object.target.value.length > object.target.maxLength) {
 			object.target.value = object.target.value.slice(
@@ -29,17 +29,17 @@ const PaymentMiddleBar = () => {
 			);
 		}
 	};
-  const toast = useToast({
-    title: "Payment Succesfull",
-    position: "top",
-    status: "success",
-    color:"white"
-  })
-  const handlePay = () => {
-    toast();
-	axios.delete("http://localhost:8080/cart");
-	  navigate("/");
-}
+	const toast = useToast({
+		title: "Payment Succesfull",
+		position: "top",
+		status: "success",
+		color: "white",
+	});
+	const handlePay = () => {
+		toast();
+		axios.delete("https://nykaclonebymyteam.herokuapp.com/cart");
+		navigate("/");
+	};
 	return (
 		<Box
 			w="100%"

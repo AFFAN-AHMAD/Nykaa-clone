@@ -36,7 +36,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "http://localhost:8080/products/sort",
+				url: "https://nykaclonebymyteam.herokuapp.com/products/sort",
 				responseType: "stream",
 				headers: {
 					id,
@@ -55,7 +55,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "http://localhost:8080/products/sorting",
+				url: "https://nykaclonebymyteam.herokuapp.com/products/sorting",
 				responseType: "stream",
 				headers: {
 					id,
@@ -75,7 +75,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "http://localhost:8080/products/sortAlpha",
+				url: "https://nykaclonebymyteam.herokuapp.com/products/sortAlpha",
 				responseType: "stream",
 				headers: {
 					id,
@@ -94,7 +94,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "http://localhost:8080/products/sortRevAlpha",
+				url: "https://nykaclonebymyteam.herokuapp.com/products/sortRevAlpha",
 				responseType: "stream",
 				headers: {
 					id,
@@ -108,7 +108,7 @@ const Sort = () => {
 		}
 	};
 	return (
-		<Box bg="white" >
+		<Box bg="white">
 			<Accordion
 				defaultIndex={[0]}
 				allowMultiple
