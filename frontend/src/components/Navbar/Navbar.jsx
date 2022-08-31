@@ -1,12 +1,12 @@
-import React , {useState,useEffect} from "react";
-import { Badge,useDisclosure } from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import { Badge, useDisclosure } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FiUser } from "react-icons/fi";
 import { Box, Center } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import styles from "./Navbar.module.css"
-import DrawerExample from "./DrawerExample"
+import styles from "./Navbar.module.css";
+import DrawerExample from "./DrawerExample";
 import axios from "axios";
 const Navbar = () => {
 	const [hooks, setHooks] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
 				console.log(res.data.name.username);
 			}
 		});
-	},[name]);
+	}, [name]);
 	//   console.log(hooks);
 	const navigate = useNavigate();
 
@@ -35,72 +35,75 @@ const Navbar = () => {
 					alt=""
 					onClick={() => navigate("/")}
 				/>
-				<div
-					className={styles.sc11}
-					onClick={() => setHooks(false)}
-				>
-					<p>
-						<Link to="">Categories</Link>
-					</p>
-					<p>
-						<Link to="">Brands</Link>
-					</p>
-					<p>
-						<Link to="">Luxe</Link>
-					</p>
-					<p>
-						<Link to="">Nykaa Fashion</Link>
-					</p>
-					<p>
-						<Link to="">Beauty Advice</Link>
-					</p>
-				</div>
-				<div
-					style={{ width: "5vw" }}
-					onClick={() => setHooks(false)}
-				></div>
-				<div className={styles.sc12}>
-					{/* <p><BiSearch/></p> */}
+				<div className={styles.parent}>
 					<div
-						className={styles.sc121}
-						style={{ border: hooks ? "1px solid red" : "none" }}
+						className={styles.sc11}
+						onClick={() => setHooks(false)}
 					>
-						<img
-							height={"30px"}
-							width={"35px"}
-							src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
-							alt=""
-						/>
+						<p>
+							<Link to="">Categories</Link>
+						</p>
+						<p>
+							<Link to="">Brands</Link>
+						</p>
+						<p>
+							<Link to="">Luxe</Link>
+						</p>
+						<p>
+							<Link to="">Nykaa Fashion</Link>
+						</p>
+						<p>
+							<Link to="">Beauty Advice</Link>
+						</p>
+					</div>
 
-						<input
-							onClick={() => {
-								setHooks(true);
+					<div className={styles.sc12}>
+						{/* <p><BiSearch/></p> */}
+						<div
+							className={styles.sc121}
+							style={{ border: hooks ? "1px solid #e62e77 " : "none" }}
+						>
+							<img
+								height={"30px"}
+								width={"35px"}
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+								alt=""
+							/>
+
+							<input
+								onClick={() => {
+									setHooks(true);
+								}}
+								style={{ width: hooks === true ? "25vw" : "13vw" }}
+								type="text"
+								placeholder="Search on Nykaa"
+							/>
+						</div>
+						<Center
+							display={hooks === true ? "none" : "block"}
+							m={2}
+							ml={5}
+							cursor={"pointer"}
+						>
+							<FiUser />
+						</Center>
+						<Link
+							to="/signup"
+							style={{
+								display: hooks === true ? "none" : "block",
+								marginLeft: "0.5vw",
+								marginTop: "0.7vh",
 							}}
-							style={{ width: hooks === true ? "25vw" : "13vw" }}
-							type="text"
-							placeholder="Search on Nykaa"
+						>
+							{name}
+						</Link>
+						<DrawerExample
+							isOpen={isOpen}
+							onOpen={onOpen}
+							onClose={onClose}
+							hooks={hooks}
 						/>
 					</div>
-					<Center display={hooks === true ? "none" : "block"} m={2} ml={5} cursor={"pointer"}>
-						<FiUser />
-					</Center>
-					<Link
-						to="/signup"
-						style={{
-							display: hooks === true ? "none" : "block",
-							marginLeft: "0.5vw",
-							marginTop: "0.7vh",
-						}}
-					>
-						
-						{name}
-					</Link>
-					<DrawerExample
-						isOpen={isOpen}
-						onOpen={onOpen}
-						onClose={onClose}
-						hooks={hooks}
-					/>
 				</div>
 				<div
 					style={{ height: "100%", width: "5vw" }}
@@ -112,13 +115,16 @@ const Navbar = () => {
 				onClick={() => setHooks(false)}
 				className={styles.sc2}
 			>
-				<div className={styles.sc21}>
+				<div
+					className={styles.sc21}
+					onClick={() => setHooks(false)}
+				>
 					<div className={styles.sc211}>
 						<p>
 							<Link to="">Make</Link>
 						</p>
 						<div className={styles.sc2111}>
-							<div style={{background:"white"}}>
+							<div style={{ background: "white" }}>
 								<h3>
 									<Link to="">Face</Link>
 								</h3>
@@ -209,7 +215,7 @@ const Navbar = () => {
 									<Link to="">Makeup Combos</Link>
 								</p>
 							</div>
-							<div style={{background:"white"}}>
+							<div style={{ background: "white" }}>
 								<h3>
 									<Link to="/products">Lips</Link>
 								</h3>
@@ -291,7 +297,7 @@ const Navbar = () => {
 									<Link to="">Multi-Functional Makeup Palettes</Link>
 								</h3>
 							</div>
-							<div style={{background:"white"}}>
+							<div style={{ background: "white" }}>
 								<h3>
 									<Link to="">Top Brands</Link>
 								</h3>
