@@ -28,7 +28,7 @@ app.use("/cart", cartRouter);
 app.listen(port, async() => {
     try {
       await connection
-        console.log('server is running on http://localhost:8080')
+        console.log(`server is running on http://localhost:${port}`);
         
     } catch {
         console.log("error while connecting")
