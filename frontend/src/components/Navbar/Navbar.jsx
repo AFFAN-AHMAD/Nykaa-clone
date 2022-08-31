@@ -121,7 +121,7 @@ const Navbar = () => {
 				>
 					<div className={styles.sc211}>
 						<p>
-							<Link to="">Make</Link>
+							<Link to="">Makeup</Link>
 						</p>
 						<div className={styles.sc2111}>
 							<div style={{ background: "white" }}>
