@@ -28,6 +28,8 @@ const createQueries = (arrOfProducts,arrOfBrands) => {
 		});
 	}
 	// console.log(combinationsArray)
+
+
 	const queryArr = [];
 	combinationsArray.map((ele) => {
 		for (x in ele) {
@@ -36,10 +38,11 @@ const createQueries = (arrOfProducts,arrOfBrands) => {
 			});
 		}
 	});
+
 	
-	for (let i = 0; i < queryArr.length; i++){
-	    console.log(queryArr[i]['$and'])
-	}
+	// for (let i = 0; i < queryArr.length; i++){
+	//     console.log(queryArr[i]['$and'])
+	// }
 	// console.log(queryArr)
 	// console.log(queryArr[0]["$and"]);
 	return queryArr;
@@ -54,7 +57,7 @@ module.exports =createQueries
 		// console.log(queryArr)
 
 
-    
+
 
 
 

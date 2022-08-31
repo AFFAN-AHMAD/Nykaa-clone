@@ -3,6 +3,10 @@
   display: flex;
   height: 10vh;
 }
+.parent{
+  display: flex;
+}
+
 .Sc1 > img {
   height: 5vh;
   margin-left: 7vw;
@@ -31,7 +35,7 @@
 }
 .sc12 {
   display: flex;
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
   /* justify-content: center; */
   margin-left:5vw ;
   width: 30vw;
@@ -109,4 +113,78 @@
 }
 .sc2111 > div > p:hover {
   color: #fb2e79;
+}
+
+
+@media all and (min-width:600px) and  (max-width:1000px) {
+  .Sc1 {
+    display: block;
+    /* border:1px solid #fb2e79; */
+    height: auto;
+    text-align: left;
+    /* justify-content: center; */
+    align-items: left;
+  }
+  .sc11{
+    text-align: left;
+     margin-left: none;
+     justify-content: left;
+     /* border: 1px solid blue; */
+  }
+  .sc2{
+    height: auto;
+    margin-top: 20px;
+  }
+  .sc121{
+  display: none;
+}
+  .sc21{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* flex-direction: column; */
+    height: auto;
+    margin:auto
+  }
+}
+
+@media all and (min-width:100px) and  (max-width:600px) {
+  .Sc1 {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid #fb2e79; */
+    height: auto;
+    /* text-align: center; */
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+  }
+  .parent{
+    display: flex;
+    justify-content: center;
+  }
+  .sc11{
+    display: block;
+     margin-left: 2vh;
+     height: auto;
+  }
+  .sc1 > img {
+  height: 5vh;
+  margin-left: none;
+  margin-top: 2.5vh;
+}
+.sc121{
+  display: none;
+}
+.sc2{
+    height: auto;
+    /* margin-top: 20px; */
+  }
+  .sc21{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* flex-direction: column; */
+    height: auto;
+    margin:auto;
+    text-align: center;
+  }
 }

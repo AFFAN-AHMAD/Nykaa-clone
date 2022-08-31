@@ -66,7 +66,7 @@ const Products = () => {
 		};
 	return (
 		<>
-			{/* <Navbar />` */}
+			<Navbar />`
 			<Box
 				w="80%"
 				m={"auto"}
