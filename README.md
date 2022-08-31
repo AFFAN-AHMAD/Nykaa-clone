@@ -28,7 +28,7 @@
 3) Go to navbar, hover on makeup and next go to the Lip column which will redirect you to the products page.
 ![Screenshot (86)](https://user-images.githubusercontent.com/96197969/187746526-d021e3a1-6a2c-4c3f-98b8-6f624380fb04.png)
 
-4) here you will find all the products available, pagination feature, sorting feature and filtering feature. 
+4) Here you will find all the products available, pagination feature, sorting feature and filtering feature. 
    The data is dynamically coming from the backend, for getting the list of available brands & categories, we have used mongo aggregation query and to filter, 
    we have used Mongo Find query using JavaScript Map Method for the creation of the various combinations. A proper blog has been written by one of the 
    team members Affan Ahmad explaining that in detail. Here you can check that https://medium.com/@affanahmad2797/algorithm-for-making-combinations-of-mongo-queries-using-javascript-map-method-d6470bc4a1f7
