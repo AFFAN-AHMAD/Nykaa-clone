@@ -53,3 +53,9 @@
 * Customer can add the product into shopping bag from the product detail page.
 * Cart page to change the items quantity or delete the items from the cart.
 * Payment page which calculates the products prices dynamically.
+# Contributors
+- [@Affan Ahmad](https://github.com/AFFAN-AHMAD)
+- [@Aman Singh](https://github.com/amansingh1712)
+- [@Aakarsh Devadiga](https://github.com/aakarsh604) 
+- [@Shubham Kashyap](https://github.com/skashyap061998)
+
