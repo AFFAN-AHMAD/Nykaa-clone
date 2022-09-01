@@ -26,7 +26,7 @@
 1) Click on this link  https://funny-week-7983-affan-ahmad.vercel.app/ 
 2) You will land on the home page of the website.
 3) Go to navbar, hover on makeup and next go to the Lip column which will redirect you to the products page.
-![Screenshot (86)](https://user-images.githubusercontent.com/96197969/187746526-d021e3a1-6a2c-4c3f-98b8-6f624380fb04.png)
+![nyka makeup to products](https://user-images.githubusercontent.com/96197969/187852767-6c5f459b-b230-47e3-abe1-68dfa3069183.png)
 
 4) Here you will find all the products available, pagination feature, sorting feature and filtering feature. 
    The data is dynamically coming from the backend, for getting the list of available brands & categories, we have used mongo aggregation query and to filter, 
