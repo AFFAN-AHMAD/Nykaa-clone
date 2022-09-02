@@ -17,7 +17,8 @@ const Login = () => {
 			data: { ...data },
 		})
 			.then((res) => {
-				console.log(res.data.message);
+				console.log(res.data);
+				localStorage.setItem("token",res.data.token)
 				if (res.data.message === "login successfull") {
 					toast({
 						title: `login successful`,
