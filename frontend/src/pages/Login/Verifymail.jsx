@@ -16,16 +16,29 @@ const Verifymail = () => {
 			.post("https://nykaclonebymyteam.herokuapp.com/verifyemail", { email })
 			.then((res) => {
 				console.log(res);
-				if (res.data.verify) navigate("/changepass");
+				if (res.data.verify) {
+					toast({
+						title: "email verified",
+						status: "success",
+						position: "top",
+					});
+						navigate("/changepass");
+				}
+			
 				if (!res.data.verify)
 					toast({
 						title: "invalid email",
 						status: "error",
+						position: "top",
 					});
 			})
 			.catch((err) => {
 				console.log(err);
-				alert("invalid email");
+				toast({
+					title: "invalid email",
+					status: "error",
+					position: "top",
+				});
 			});
 	};
 	return (

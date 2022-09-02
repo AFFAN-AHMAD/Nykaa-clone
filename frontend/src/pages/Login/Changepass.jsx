@@ -2,8 +2,9 @@ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
-
+import { useToast } from "@chakra-ui/react";
 const Changepass = () => {
+	const toast = useToast();
 	const [data, setData] = React.useState({});
 	const navigate = useNavigate();
 
@@ -22,13 +23,25 @@ const Changepass = () => {
 				.then((res) => {
 					console.log(res.data.verify, "brgy");
 					if (res.data.verify) {
-						alert("Passowrd changed succesfully");
+						toast({
+							title: "password changed successfully",
+							status: "success",
+							position: "top",
+						});
 						navigate("/login");
 					}
 				})
-				.catch((err) => alert("error"));
+				.catch((err) => toast({
+						title: "error while verifying, check your enail",
+						status: "error",
+						position: "top",
+					}));
 		} else {
-			alert("Password does not match");
+			toast({
+				title: "passowrd does not match",
+				status: "error",
+				position: "top",
+			});
 		}
 	};
 	return (

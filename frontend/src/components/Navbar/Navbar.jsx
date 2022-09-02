@@ -18,7 +18,9 @@ const Navbar = () => {
 		axios.get("https://nykaclonebymyteam.herokuapp.com/getuser").then((res) => {
 			if (res.data.message === "user") {
 				setName(res.data.user.username);
-				console.log(res.data.name.username);
+				console.log(res.data.user);
+				
+	
 			}
 		});
 	}, [name]);
