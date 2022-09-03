@@ -122,6 +122,7 @@ const Otp = () => {
 								textAlign: "center",
 								outline: "red",
 							}}
+							type="password"
 						/>
 						<br></br>
 						<button

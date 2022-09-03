@@ -84,7 +84,7 @@ const Changepass = () => {
 							outline: "red",
 						}}
 						placeholder="New Password"
-						type="text"
+						type="password"
 						name="New_password"
 						onChange={handleChange}
 					></input>
@@ -99,7 +99,7 @@ const Changepass = () => {
 							outline: "red",
 						}}
 						placeholder="Confirm Passoword"
-						type="text"
+						type="password"
 						name="confirm_password"
 						onChange={handleChange}
 					></input>
