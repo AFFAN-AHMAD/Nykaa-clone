@@ -40,7 +40,7 @@
  6) To add a product to your cart, click on add to bag button, now in the navbar there is "bag" icon, to open the cart, click on that.
  7) Here in the cart you can increase the quantitiy of the products, remove any product for the cart and proceed to the address page.
  8) On the address, you can click on ship to this address button and move to the payemnt page.
- 9) Confirm your card details click on Pay now, your order has been placed now the card will be emptied and you will be redirected tp the home page again. 
+ 9) Confirm your card details click on Pay now, your order has been placed now the cart will be emptied and you will be redirected tp the home page again. 
 
 # Features
 * There is login and logout functionality.
