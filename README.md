@@ -38,7 +38,7 @@
     ![Screenshot (88)](https://user-images.githubusercontent.com/96197969/187749188-e7dba163-1d44-49ab-9cc8-e882cb9a3794.png)
     ![Screenshot (89)](https://user-images.githubusercontent.com/96197969/187749219-5852c62e-d4d5-4afb-8bd6-2100778636c3.png)
  6) To add a product to your cart, click on add to bag button, now in the navbar there is "bag" icon, to open the cart, click on that.
- 7) Here in the cart you can increase the quantitiy of the products, remove any product for the cart and proceed to the address page.
+ 7) Here in the cart you can increase the quantity of the products, remove any product for the cart and proceed to the address page.
  8) On the address, you can click on ship to this address button and move to the payemnt page.
  9) Confirm your card details click on Pay now, your order has been placed now the cart will be emptied and you will be redirected tp the home page again. 
 
