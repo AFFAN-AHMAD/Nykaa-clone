@@ -52,7 +52,7 @@
 * Customer can validate the pincode for delivery information.
 * Customer can add the product into shopping bag from the product detail page.
 * Cart page to change the items quantity or delete the items from the cart.
-* Payment page which calculates the products prices dynamically.
+* Payment page which calculates the amount of products dynamically.
 # Contributors
 - [@Affan Ahmad](https://github.com/AFFAN-AHMAD)
 - [@Aman Singh](https://github.com/amansingh1712)
