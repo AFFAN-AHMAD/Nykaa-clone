@@ -2,7 +2,7 @@ const { Router } = require("express");
 const UserModel = require("../models/User.model");
 const nodemailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
-
+var cors = require("cors");
 const UserRouter = Router();
 
 let flag = false;
@@ -31,7 +31,7 @@ UserRouter.post("/signup", async (req, res) => {
 	return res.status(201).send("singup suseccfull");
 });
 
-UserRouter.post("/getotp", (req, res) => {
+UserRouter.post("/getotp",(req, res) => {
 	const { email } = req.body;
 	const otp = Math.floor(Math.random() * 1000000);
 	otpArray.push(otp);
