@@ -28,10 +28,10 @@
 3) Go to navbar, hover on makeup and next go to the Lip column which will redirect you to the products page.
 ![nyka makeup to products](https://user-images.githubusercontent.com/96197969/187852767-6c5f459b-b230-47e3-abe1-68dfa3069183.png)
 
-4) Here you will find all the products available, pagination feature, sorting feature and filtering feature. 
+4) Here you will find all the products available, Pagination feature, Sorting feature and Filtering feature. 
    The data is dynamically coming from the backend, for getting the list of available brands & categories, we have used mongo aggregation query and to filter, 
    we have used Mongo Find query using JavaScript Map Method for the creation of the various combinations. A proper blog has been written by one of the 
-   team members Affan Ahmad explaining that in detail. Here you can check that https://medium.com/@affanahmad2797/algorithm-for-making-combinations-of-mongo-queries-using-javascript-map-method-d6470bc4a1f7
+   team members [@Affan Ahmad](https://github.com/AFFAN-AHMAD) explaining that in detail. Here you can check that https://medium.com/@affanahmad2797/algorithm-for-making-combinations-of-mongo-queries-using-javascript-map-method-d6470bc4a1f7
 
 5) Every product has a veiw-details option in that, clicking on that will redirect you to the product's details page, where you can check the various information avalaible for that particular product, we are using react-router-dom to get the "id" of that particular product and navigating to the product/:id page. Here you can check if the product is available in you area or not inserting your pincode into the input box and clicking "check"
   
