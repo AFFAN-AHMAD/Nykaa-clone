@@ -43,7 +43,7 @@
  9) Confirm your card details click on Pay now, your order has been placed now the cart will be emptied and you will be redirected tp the home page again. 
 
 # Features
-* There is login and logout functionality.
+* There is Login/Signup functionality.
 * Elegant Navbar for easy navigation between pages and products.
 * Customer can view the products on product page and sort them by price and in lexical manner.
 * In product page pagination feature is available so that user can easily navigate one page to another and see the products in systematic manner.
