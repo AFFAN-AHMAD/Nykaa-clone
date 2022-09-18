@@ -19,8 +19,6 @@ const Navbar = () => {
 			if (res.data.message === "user") {
 				setName(res.data.user.username);
 				console.log(res.data.user);
-				
-	
 			}
 		});
 	}, [name]);
@@ -43,19 +41,19 @@ const Navbar = () => {
 						onClick={() => setHooks(false)}
 					>
 						<p>
-							<Link to="">Categories</Link>
+							<Link to="/products">Categories</Link>
 						</p>
 						<p>
-							<Link to="">Brands</Link>
+							<Link to="/products">Brands</Link>
 						</p>
 						<p>
-							<Link to="">Luxe</Link>
+							<Link to="/products">Luxe</Link>
 						</p>
 						<p>
-							<Link to="">Nykaa Fashion</Link>
+							<Link to="/products">Nykaa Fashion</Link>
 						</p>
 						<p>
-							<Link to="">Beauty Advice</Link>
+							<Link to="/products">Beauty Advice</Link>
 						</p>
 					</div>
 
@@ -128,93 +126,93 @@ const Navbar = () => {
 						<div className={styles.sc2111}>
 							<div style={{ background: "white" }}>
 								<h3>
-									<Link to="">Face</Link>
+									<Link to="/products">Face</Link>
 								</h3>
 								<p>
-									<Link to="">Face Primer</Link>
+									<Link to="/products">Face Primer</Link>
 								</p>
 								<p>
-									<Link to="">Concealer</Link>
+									<Link to="/products">Concealer</Link>
 								</p>
 								<p>
-									<Link to="">Foundation</Link>
+									<Link to="/products">Foundation</Link>
 								</p>
 								<p>
-									<Link to="">Compact</Link>
+									<Link to="/products">Compact</Link>
 								</p>
 								<p>
-									<Link to="">Contour</Link>
+									<Link to="/products">Contour</Link>
 								</p>
 								<p>
-									<Link to="">Loose Powder</Link>
+									<Link to="/products">Loose Powder</Link>
 								</p>
 								<p>
-									<Link to="">Tinted Moisturizer</Link>
+									<Link to="/products">Tinted Moisturizer</Link>
 								</p>
 								<p>
-									<Link to="">Blush</Link>
+									<Link to="/products">Blush</Link>
 								</p>
 								<p>
-									<Link to="">Bronzer</Link>
+									<Link to="/products">Bronzer</Link>
 								</p>
 								<p>
-									<Link to="">BB & CC Cream</Link>
+									<Link to="/products">BB & CC Cream</Link>
 								</p>
 								<p>
-									<Link to="">Highlighters</Link>
+									<Link to="/products">Highlighters</Link>
 								</p>
 								<p>
-									<Link to="">Setting Spray</Link>
+									<Link to="/products">Setting Spray</Link>
 								</p>
 								<p>
-									<Link to="">Makeup Remover</Link>
+									<Link to="/products">Makeup Remover</Link>
 								</p>
 								<p>
-									<Link to="">Sindoor</Link>
+									<Link to="/products">Sindoor</Link>
 								</p>
 							</div>
 							<div style={{ backgroundColor: "#f4f4f4" }}>
 								<h3>
-									<Link to="">Eyes</Link>
+									<Link to="/products">Eyes</Link>
 								</h3>
 								<p>
-									<Link to="">Kajal</Link>
+									<Link to="/products">Kajal</Link>
 								</p>
 								<p>
-									<Link to="">Eyeliner</Link>
+									<Link to="/products">Eyeliner</Link>
 								</p>
 								<p>
-									<Link to="">Mascara</Link>
+									<Link to="/products">Mascara</Link>
 								</p>
 								<p>
-									<Link to="">Eye Shadow</Link>
+									<Link to="/products">Eye Shadow</Link>
 								</p>
 								<p>
-									<Link to="">Eye Brow Enhancers</Link>
+									<Link to="/products">Eye Brow Enhancers</Link>
 								</p>
 								<p>
-									<Link to="">Eye Primer</Link>
+									<Link to="/products">Eye Primer</Link>
 								</p>
 								<p>
-									<Link to="">False Eyelashes</Link>
+									<Link to="/products">False Eyelashes</Link>
 								</p>
 								<p>
-									<Link to="">Eye Makeup Remover</Link>
+									<Link to="/products">Eye Makeup Remover</Link>
 								</p>
 								<p>
-									<Link to="">Under Eye Concealer</Link>
+									<Link to="/products">Under Eye Concealer</Link>
 								</p>
 								<p>
-									<Link to="">Contact Lenses</Link>
+									<Link to="/products">Contact Lenses</Link>
 								</p>
 								<h3 style={{ marginTop: "2.5vh" }}>
-									<Link to="">Makeup Kits & Combos</Link>
+									<Link to="/products">Makeup Kits & Combos</Link>
 								</h3>
 								<p>
-									<Link to="">Makeup Kits</Link>
+									<Link to="/products">Makeup Kits</Link>
 								</p>
 								<p>
-									<Link to="">Makeup Combos</Link>
+									<Link to="/products">Makeup Combos</Link>
 								</p>
 							</div>
 							<div style={{ background: "white" }}>
@@ -222,178 +220,178 @@ const Navbar = () => {
 									<Link to="/products">Lips</Link>
 								</h3>
 								<p>
-									<Link to="">Lipstick</Link>
+									<Link to="/products">Lipstick</Link>
 								</p>
 								<p>
-									<Link to="">Liquid Lipstick</Link>
+									<Link to="/products">Liquid Lipstick</Link>
 								</p>
 								<p>
-									<Link to="">Lip Crayon</Link>
+									<Link to="/products">Lip Crayon</Link>
 								</p>
 								<p>
-									<Link to="">Lip Gloss</Link>
+									<Link to="/products">Lip Gloss</Link>
 								</p>
 								<p>
-									<Link to="">Lip Liner</Link>
+									<Link to="/products">Lip Liner</Link>
 								</p>
 								<p>
-									<Link to="">Lip Plumper</Link>
+									<Link to="/products">Lip Plumper</Link>
 								</p>
 								<p>
-									<Link to="">Lip Stain</Link>
+									<Link to="/products">Lip Stain</Link>
 								</p>
 								<h3 style={{ marginTop: "2.5vh" }}>
-									<Link to="">Nails</Link>
+									<Link to="/products">Nails</Link>
 								</h3>
 								<p>
-									<Link to="">Nail Polish</Link>
+									<Link to="/products">Nail Polish</Link>
 								</p>
 								<p>
-									<Link to="">Nail Art Kits</Link>
+									<Link to="/products">Nail Art Kits</Link>
 								</p>
 								<p>
-									<Link to="">Nail Care</Link>
+									<Link to="/products">Nail Care</Link>
 								</p>
 								<p>
-									<Link to="">Nail Polish Remover</Link>
+									<Link to="/products">Nail Polish Remover</Link>
 								</p>
 							</div>
 							<div style={{ backgroundColor: "#f4f4f4" }}>
 								<h3>
-									<Link to="">Tools & Brushes</Link>
+									<Link to="/products">Tools & Brushes</Link>
 								</h3>
 								<p>
-									<Link to="">Face Brush</Link>
+									<Link to="/products">Face Brush</Link>
 								</p>
 								<p>
-									<Link to="">Eye Brush</Link>
+									<Link to="/products">Eye Brush</Link>
 								</p>
 								<p>
-									<Link to="">Lip Brush</Link>
+									<Link to="/products">Lip Brush</Link>
 								</p>
 								<p>
-									<Link to="">Brush Sets</Link>
+									<Link to="/products">Brush Sets</Link>
 								</p>
 								<p>
-									<Link to="">Brush Cleaners</Link>
+									<Link to="/products">Brush Cleaners</Link>
 								</p>
 								<p>
-									<Link to="">Sponges & Applicators</Link>
+									<Link to="/products">Sponges & Applicators</Link>
 								</p>
 								<p>
-									<Link to="">Eyelash Curlers</Link>
+									<Link to="/products">Eyelash Curlers</Link>
 								</p>
 								<p>
-									<Link to="">Tweezers</Link>
+									<Link to="/products">Tweezers</Link>
 								</p>
 								<p>
-									<Link to="">Sharpeners</Link>
+									<Link to="/products">Sharpeners</Link>
 								</p>
 								<p>
-									<Link to="">Mirrors</Link>
+									<Link to="/products">Mirrors</Link>
 								</p>
 								<p>
-									<Link to="">Makeup Pouches</Link>
+									<Link to="/products">Makeup Pouches</Link>
 								</p>
 								<h3 style={{ marginTop: "2.5vh" }}>
-									<Link to="">Multi-Functional Makeup Palettes</Link>
+									<Link to="/products">Multi-Functional Makeup Palettes</Link>
 								</h3>
 							</div>
 							<div style={{ background: "white" }}>
 								<h3>
-									<Link to="">Top Brands</Link>
+									<Link to="/products">Top Brands</Link>
 								</h3>
 								<p>
-									<Link to="">Kay Beauty</Link>
+									<Link to="/products">Kay Beauty</Link>
 								</p>
 								<p>
-									<Link to="">Huda Beauty</Link>
+									<Link to="/products">Huda Beauty</Link>
 								</p>
 								<p>
-									<Link to="">Charlotte Tilbury</Link>
+									<Link to="/products">Charlotte Tilbury</Link>
 								</p>
 								<p>
-									<Link to="">M.A.C</Link>
+									<Link to="/products">M.A.C</Link>
 								</p>
 								<p>
-									<Link to="">Maybelline New York</Link>
+									<Link to="/products">Maybelline New York</Link>
 								</p>
 								<p>
-									<Link to="">L'Oreal Paris</Link>
+									<Link to="/products">L'Oreal Paris</Link>
 								</p>
 								<p>
-									<Link to="">Lakme</Link>
+									<Link to="/products">Lakme</Link>
 								</p>
 								<p>
-									<Link to="">Nykaa Cosmetics</Link>
+									<Link to="/products">Nykaa Cosmetics</Link>
 								</p>
 								<p>
-									<Link to="">Nyx Pro.Makeup</Link>
+									<Link to="/products">Nyx Pro.Makeup</Link>
 								</p>
 							</div>
 							<div style={{ backgroundColor: "#f4f4f4" }}>
 								<h3>
-									<Link to="">Quick Links</Link>
+									<Link to="/products">Quick Links</Link>
 								</h3>
 								<p>
-									<Link to="">Combos @ Nykaa</Link>
+									<Link to="/products">Combos @ Nykaa</Link>
 								</p>
 								<p>
-									<Link to="">New Launches</Link>
+									<Link to="/products">New Launches</Link>
 								</p>
 								<p>
-									<Link to="">NFBA Nominees 2020</Link>
+									<Link to="/products">NFBA Nominees 2020</Link>
 								</p>
 								<p>
-									<Link to="">Gifts @ Nykaa</Link>
+									<Link to="/products">Gifts @ Nykaa</Link>
 								</p>
 								<p>
-									<Link to="">The Gift Store</Link>
+									<Link to="/products">The Gift Store</Link>
 								</p>
 								<h3 style={{ marginTop: "2.5vh" }}>
-									<Link to="">Trending Searches</Link>
+									<Link to="/products">Trending Searches</Link>
 								</h3>
 								<p>
-									<Link to="">Nude Lipstick</Link>
+									<Link to="/products">Nude Lipstick</Link>
 								</p>
 								<p>
-									<Link to="">Matte Lipstick</Link>
+									<Link to="/products">Matte Lipstick</Link>
 								</p>
 								<p>
-									<Link to="">Red Lipstick</Link>
+									<Link to="/products">Red Lipstick</Link>
 								</p>
 								<p>
-									<Link to="">Pink Lipstick</Link>
+									<Link to="/products">Pink Lipstick</Link>
 								</p>
 							</div>
 						</div>
 					</div>
 					<p>
-						<Link to="">Skin</Link>
+						<Link to="/products">Skin</Link>
 					</p>
 					<p>
-						<Link to="">Hair</Link>
+						<Link to="/products">Hair</Link>
 					</p>
 					<p>
-						<Link to="">Bath & Body</Link>
+						<Link to="/products">Bath & Body</Link>
 					</p>
 					<p>
-						<Link to="">Nature</Link>
+						<Link to="/products">Nature</Link>
 					</p>
 					<p>
-						<Link to="">Mom & Baby</Link>
+						<Link to="/products">Mom & Baby</Link>
 					</p>
 					<p>
-						<Link to="">Health & Wellness</Link>
+						<Link to="/products">Health & Wellness</Link>
 					</p>
 					<p>
-						<Link to="">Men</Link>
+						<Link to="/products">Men</Link>
 					</p>
 					<p>
-						<Link to="">Fragrance</Link>
+						<Link to="/products">Fragrance</Link>
 					</p>
 					<p>
-						<Link to="">Pop Ups</Link>
+						<Link to="/products">Pop Ups</Link>
 					</p>
 				</div>
 			</div>
