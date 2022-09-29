@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-
+//  No need of these these const . Can be formualted in run time
 const dataSlider1 = [
   {
     id: uuidv4(),

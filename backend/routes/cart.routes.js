@@ -1,3 +1,4 @@
+// Follow all suggestions from user routes as to make our DRY
 const { Router } = require("express");
 const CartModel = require("../models/Cart.model");
 

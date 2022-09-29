@@ -1,3 +1,4 @@
+// Follow all suggestions from user routes as to make our DRY
 const { Router } = require("express");
 
 const ProductsModel = require("../models/Products.Model");
@@ -10,6 +11,7 @@ const brandList = require("../controller/brandList");
 productsRouter.post("/", (req, res) => {});
 
 productsRouter.get("/", async (req, res) => {
+	//Validation of headers
 	const { brand, product_type } = req.headers;
 	const result = await ProductsModel.find();
 	res.send(result);
@@ -36,6 +38,9 @@ productsRouter.get("/filter", async (req, res) => {
 	let product_type = req.headers.product_type;
 	const pageNo = req.query.pageNo;
 	// console.log(pageNo,"paghe")
+	// Take constants from constant file
+
+	// It is not common to return in if statement also violating DRY . Declare a variable result and update it on each case.
 	if (!brand && !product_type) {
 		const result = await ProductsModel.find()
 			.skip(9 * (pageNo - 1))
@@ -65,6 +70,7 @@ productsRouter.get("/filter", async (req, res) => {
 productsRouter.get("/sort", async (req, res) => {
 	const arr = req.headers.id;
 	const nwArr = [];
+	// Common piece of code push to utils
 	arr.split(",").map((ele) => {
 		nwArr.push({ id: ele });
 	});
@@ -74,6 +80,7 @@ productsRouter.get("/sort", async (req, res) => {
 productsRouter.get("/sorting", async (req, res) => {
 	const arr = req.headers.id;
 	const nwArr = [];
+	// Common piece of code push to utils
 	arr.split(",").map((ele) => {
 		nwArr.push({ id: ele });
 	});
@@ -83,6 +90,7 @@ productsRouter.get("/sorting", async (req, res) => {
 productsRouter.get("/sortAlpha", async (req, res) => {
 	const arr = req.headers.id;
 	const nwArr = [];
+	// Common piece of code push to utils
 	arr.split(",").map((ele) => {
 		nwArr.push({ id: ele });
 	});
@@ -93,6 +101,7 @@ productsRouter.get("/sortAlpha", async (req, res) => {
 productsRouter.get("/sortRevAlpha", async (req, res) => {
 	const arr = req.headers.id;
 	const nwArr = [];
+	// Common piece of code push to utils
 	arr.split(",").map((ele) => {
 		nwArr.push({ id: ele });
 	});

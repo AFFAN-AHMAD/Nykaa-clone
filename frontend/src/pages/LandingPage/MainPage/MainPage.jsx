@@ -10,6 +10,7 @@ import onlyAtNykaaData from "./Container/onlyAtNykaaData";
 import featureBrandData from "./Container/featureBrandData";
 import belowFeatureBrandData from "./Container/belowFeatureBrandData";
 
+//Take image src from constants
 
 
 export default function MainPage() {

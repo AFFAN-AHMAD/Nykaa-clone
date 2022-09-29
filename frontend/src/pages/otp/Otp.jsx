@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Otp.module.css";
 import { useToast } from "@chakra-ui/react";
+// Follow prev file comments
 const Otp = () => {
 	const [otp, setotp] = React.useState("");
 	const [data, setData] = React.useState({});

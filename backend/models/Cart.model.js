@@ -1,3 +1,4 @@
+//Add validations
 const {Schema, model} = require("mongoose");
 
 const CartSchema = new Schema({
