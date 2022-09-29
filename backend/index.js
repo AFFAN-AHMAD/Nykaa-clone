@@ -2,6 +2,10 @@ const express = require('express')
 const mongoose = require('mongoose')
 var cors = require('cors')
 // require("dotenv").config();
+
+
+
+// Make differnt file for initializing routes
 const port = process.env.PORT||8080
 const cartRouter = require("./routes/cart.routes");
 const productsRouter = require("./routes/products.routes");

@@ -3,6 +3,7 @@ import { Box, Center, Flex ,Heading,Text} from "@chakra-ui/react"
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { FiEdit2 } from 'react-icons/fi';
 import { useNavigate } from "react-router-dom";
+// Take constants from different file
 const MiddleBar = () => {
   const navigate = useNavigate()
   return (

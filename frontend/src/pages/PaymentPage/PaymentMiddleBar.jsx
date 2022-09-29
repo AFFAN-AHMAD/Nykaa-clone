@@ -14,6 +14,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+// Follow prev file comments
 const PaymentMiddleBar = () => {
 	const dispatch = useDispatch();
 	const cart = useSelector((state) => state.cart.cartData);

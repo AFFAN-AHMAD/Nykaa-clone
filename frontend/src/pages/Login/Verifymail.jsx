@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
 import { useToast } from "@chakra-ui/react";
 
+// Follow prev file comments
 const Verifymail = () => {
 	const navigate = useNavigate();
 	const [email, setEmail] = React.useState("");
@@ -11,6 +12,7 @@ const Verifymail = () => {
 	const toast = useToast();
 	// console.log("refesehd")
 	const handleSubmit = () => {
+		//Common functinality place in one file
 		console.log("data:", email);
 		axios
 			.post("https://nykaclonebymyteam.herokuapp.com/verifyemail", { email })

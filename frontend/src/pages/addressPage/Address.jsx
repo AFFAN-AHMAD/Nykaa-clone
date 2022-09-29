@@ -5,6 +5,7 @@ import LeftBar from "./LeftBar";
 import MiddleBar from "./MiddleBar";
 import Rightbar from "./Rightbar";
 
+//  always fetch relative path from constants , Once changes can be easily done from there
 const Address = () => {
   return (
 		<Box bg="whitesmoke">

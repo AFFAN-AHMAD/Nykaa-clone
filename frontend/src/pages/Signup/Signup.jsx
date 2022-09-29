@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./Signup.module.css";
-
+// Follow prev file comments
 
 const Signup = () => {
   const navigate = useNavigate();

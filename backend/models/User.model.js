@@ -1,5 +1,5 @@
 const {Schema,model} = require('mongoose')
-
+//Add validations
 
 const UserSchema = new Schema({
     username:String,

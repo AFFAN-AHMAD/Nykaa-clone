@@ -15,7 +15,7 @@ export default function Card({property}) {
         maxW="100%"
         maxH="100%"
         />
-  
+ {/* Remove contional from here and put it in separate components */}
   {
     property.title===undefined ? "":(
       <Box p='6' bg="white" w="95%" m="auto" pos="relative" top="-100px" textAlign="center"
