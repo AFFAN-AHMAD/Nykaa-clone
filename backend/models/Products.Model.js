@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-//Add validations
+
 const ProductsSchema = Schema({
     id: String,
     name: String,

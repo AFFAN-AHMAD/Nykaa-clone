@@ -7,7 +7,6 @@ import React,{useState,useEffect} from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { BallTriangle } from "react-loader-spinner";
 import { Flex } from "@chakra-ui/react";
-// Remove conditional from main component
 export default function LandingPage() {
 	const [loader, setLoader] = useState(true);
 	 useEffect(() => {

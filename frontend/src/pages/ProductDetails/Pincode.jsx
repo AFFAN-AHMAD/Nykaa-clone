@@ -21,7 +21,6 @@ const Pincode = () => {
   const [state, setState] = useState("");
   const [loader, setLoader] = useState(false);
 
-  // Follow prev file comments
   const handleCheck = async () => {
     setLoader(true);
     if (pincode) {

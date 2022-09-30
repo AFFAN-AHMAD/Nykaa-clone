@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
 import { useToast } from "@chakra-ui/react";
-// Break into small coponents
 const Changepass = () => {
 	const toast = useToast();
 	const [data, setData] = React.useState({});

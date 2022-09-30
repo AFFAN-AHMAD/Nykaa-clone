@@ -21,7 +21,7 @@ import {
       </Text>
     );
   };
-  // Pass css value in css file and move constants to constant file
+  
   export default function FooterTop() {
     return (
       <Box

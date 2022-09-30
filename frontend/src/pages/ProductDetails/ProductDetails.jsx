@@ -43,7 +43,6 @@ const ProductDetails = () => {
 	});
 	const [loader, setLoader] = useState(true);
 
-	// Follow prev file comments
 	useEffect(() => {
 		setTimeout(() => {
 			setLoader((loader) => !loader);

@@ -1,6 +1,5 @@
 
-//Change file name . Used by js community can cause confusion
-// this can be part of manager but not controller, irrelevant peice of code
+
 
 
 // let arrOfProducts = [ 'lip balm', 'lipstick']

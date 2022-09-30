@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Divider,  Text } from "@chakra-ui/react";
-// Create a single component and loop this form component
 const PaymentLeftBar = () => {
   return <Box bg="white" w="280px" pb={3} pl={4}>
     <Box>

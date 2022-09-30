@@ -1,4 +1,4 @@
-// All featureBrandData, TopBrandData and onlyAtNykaaData should be ina single file naming content list
+
 const TopBrandData = [
   {
   imageUrl: 'https://images-static.nykaa.com/uploads/b85472f3-a627-42c2-b3c3-6313468f272f.jpg?tr=w-600,cm-pad_resize',

@@ -34,7 +34,6 @@ borderRadius="3px"
   >
     {property.title}
   </Box>
-  {/* Remove contional from here and put it in separate components */}
 {
   property.formattedPrice===undefined? (<Box color="white">{"a"}</Box>):(
  <Box>

@@ -24,10 +24,8 @@ const dispatch = useDispatch()
     return ac + +el.price * +el.quantity;
   }, 0);
   const items = cart.reduce((ac,el) => {
-    // Qunatity is always postive and separate + is added
     return ac + +el.quantity;
   },0);
-  // 0.08 from constants
   const discount = (cartTotal * 0.08).toFixed(0);
   const grandTotal = cartTotal - discount;
    useEffect(() => {

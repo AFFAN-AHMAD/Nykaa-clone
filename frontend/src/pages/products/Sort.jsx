@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-// Follow prev file comments
+
 const Sort = () => {
 	const productData = useSelector((state) => state.products.productsData);
 	const newArr = [...productData];

@@ -1,4 +1,4 @@
-// This is a util function no need make permutation file
+
 const permutation = (arr) => {
     const newArr =[]
 

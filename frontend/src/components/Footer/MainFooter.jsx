@@ -33,7 +33,6 @@ import {
         >
         <Container as={Stack} maxW={'6xl'} py={10}>
           <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={8}>
-            {/* Repeation of code. Make a differnt functional component and loop it to use this Stack */}
             <Stack align={'flex-start'}>
               
               <ListHeader>
@@ -49,7 +48,6 @@ import {
               <Links  href={'https://www.nykaa.com/responsible-disclosure'}>Responsible Disclosure</Links>
               <Links  href={'https://www.nykaa.com/investor-relations'}>Investor Relations</Links>
             </Stack>
-            
             <Stack align={'flex-start'}>
               <ListHeader fontWeight={"bold"} >Help</ListHeader>
               <Links  href={'https://www.nykaa.com/gateway-api/omsApis/helpCenter?domain=NYKAA'}>Contact Us</Links>

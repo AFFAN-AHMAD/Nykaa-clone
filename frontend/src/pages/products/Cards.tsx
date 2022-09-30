@@ -31,7 +31,7 @@ interface RatingProps {
 	rating: number;
 	numReviews: number;
 }
-// Seaprate run time calculations from element formation
+
 function Rating({ rating, numReviews }: RatingProps) {
 	return (
 		<Flex alignItems="center">

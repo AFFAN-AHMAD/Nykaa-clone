@@ -26,7 +26,6 @@ const Navbar = () => {
 	const navigate = useNavigate();
 
 	// console.log("data",items)
-	//Distribute your parent in small child components taken care of DRY . ( always have this in practice as it helps in unit testing)
 	return (
 		<div style={{ background: "white" }}>
 			<div className={styles.Sc1}>

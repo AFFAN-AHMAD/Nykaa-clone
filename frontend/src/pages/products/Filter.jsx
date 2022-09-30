@@ -15,7 +15,6 @@ import { ComponentStyleConfig } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useToast } from "@chakra-ui/react";
 
-// Break it into samll components
 const FIlter = () => {
 	const [noOfBRands, SetNoOfBrands] = useState([]);
 	const [noOfCategory, SetnoOfCategory] = useState([]);

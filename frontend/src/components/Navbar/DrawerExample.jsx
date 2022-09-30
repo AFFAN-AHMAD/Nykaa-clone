@@ -98,7 +98,6 @@ function DrawerExample({ isOpen, onClose, hooks, onOpen }) {
             </Flex>
           </DrawerHeader>
 
-        {/* Try to avoid using conditional for rendering component. In future cases can increase or may same can be used in other file (HOC) */}
           {cartQuantity ? (
             <DrawerBody>
               <Flex direction="column" gap="15px">

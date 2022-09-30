@@ -9,7 +9,6 @@ import {
   AlertIcon,
 } from '@chakra-ui/react';
 
-// Follow prev file comments
 export default function Payment() {
   return (
     <Box bg="#f3f3f3" h="800px" w="100%" m="auto">
