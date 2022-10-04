@@ -14,6 +14,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import {getItemApi} from "../../store/cart/cart.actions"
 // Follow prev file comments
 const PaymentMiddleBar = () => {
 	const dispatch = useDispatch();
@@ -38,7 +39,9 @@ const PaymentMiddleBar = () => {
 	});
 	const handlePay = () => {
 		toast();
-		axios.delete("https://nykaclonebymyteam.herokuapp.com/cart");
+		axios.delete("https://nykaclonebymyteam.herokuapp.com/cart").then(() => {
+			dispatch(getItemApi())
+		})
 		navigate("/");
 	};
 	return (
