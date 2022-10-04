@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Sidebar from "./Sidebar";
-import ProductAddToCart from "./Cards.tsx";
+import ProductAddToCart from "./Cards.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";

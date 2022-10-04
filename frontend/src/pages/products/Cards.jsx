@@ -27,12 +27,9 @@ const data = {
 	numReviews: 34,
 };
 
-interface RatingProps {
-	rating: number;
-	numReviews: number;
-}
 
-function Rating({ rating, numReviews }: RatingProps) {
+
+function Rating({ rating, numReviews }) {
 	return (
 		<Flex alignItems="center">
 			{Array(5)
