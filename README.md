@@ -23,7 +23,7 @@
 #### create a .env file with username and password of mongodb
 
 # Step by Step procedure to run this app using the deployed link
-1) Click on this link  https://nykaa-clone-bice.vercel.app/
+1) Click on this link  https://shabashclone.vercel.app/
 2) You will land on the home page of the website.
 3) Go to navbar, hover on makeup and next go to the Lip column which will redirect you to the products page.
 ![nyka makeup to products](https://user-images.githubusercontent.com/96197969/187852767-6c5f459b-b230-47e3-abe1-68dfa3069183.png)
