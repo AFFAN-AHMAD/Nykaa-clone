@@ -13,7 +13,7 @@ const Login = () => {
 		console.log(data, " Sent data");
 		axios({
 			method: "post",
-			url: "https://nykaclonebymyteam.herokuapp.com/login",
+			url: "https://real-gold-earthworm-tam.cyclic.app/login",
 			data: { ...data },
 		})
 			.then((res) => {

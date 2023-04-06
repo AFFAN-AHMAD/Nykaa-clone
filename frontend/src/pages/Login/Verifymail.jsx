@@ -13,7 +13,7 @@ const Verifymail = () => {
 	const handleSubmit = () => {
 		console.log("data:", email);
 		axios
-			.post("https://nykaclonebymyteam.herokuapp.com/verifyemail", { email })
+			.post("https://real-gold-earthworm-tam.cyclic.app/verifyemail", { email })
 			.then((res) => {
 				console.log(res);
 				if (res.data.verify) {

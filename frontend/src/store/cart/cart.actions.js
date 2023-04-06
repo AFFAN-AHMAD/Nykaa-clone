@@ -21,7 +21,7 @@ export const getItemApi = () => (dispatch) => {
   dispatch({ type: GET_ITEM_CART_LOADING });
 
   axios
-    .get("https://nykaclonebymyteam.herokuapp.com/cart")
+    .get("https://real-gold-earthworm-tam.cyclic.app/cart")
     .then((res) => {
       return dispatch({ type: GET_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -32,7 +32,7 @@ export const getSingleItemApi = (id) => (dispatch) => {
   dispatch({ type: GET_SINGLE_ITEM_CART_LOADING });
 
   axios
-    .get(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`)
+    .get(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`)
     .then((res) => {
       return dispatch({ type: GET_SINGLE_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -43,7 +43,7 @@ export const addCartApi = (item) => (dispatch) => {
   dispatch({ type: ADD_TO_CART_LOADING });
 
   axios
-    .post("https://nykaclonebymyteam.herokuapp.com/cart", {
+    .post("https://real-gold-earthworm-tam.cyclic.app/cart", {
       name: item.name,
       gram: item.gram,
       image: item.images[0],
@@ -62,7 +62,7 @@ export const removeCartApi = (id) => (dispatch) => {
   dispatch({ type: REMOVE_FROM_CART_LOADING });
 
   axios
-    .delete(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`)
+    .delete(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`)
     .then((res) => dispatch({ type: REMOVE_FROM_CART_SUCCESS, payload: id }))
 
     .catch((r) => dispatch({ type: REMOVE_FROM_CART_ERROR }));
@@ -71,7 +71,7 @@ export const removeCartApi = (id) => (dispatch) => {
 export const updateCartApi = (id, quantity) => (dispatch) => {
   dispatch({ type: UPDATE_CART_LOADING });
   axios
-    .put(`https://nykaclonebymyteam.herokuapp.com/cart/${id}`, {
+    .put(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`, {
       quantity,
     })
     .then((res) => {

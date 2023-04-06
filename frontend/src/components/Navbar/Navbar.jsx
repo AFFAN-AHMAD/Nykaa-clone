@@ -15,7 +15,7 @@ const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	useEffect(() => {
-		axios.get("https://nykaclonebymyteam.herokuapp.com/getuser").then((res) => {
+		axios.get("https://real-gold-earthworm-tam.cyclic.app/getuser").then((res) => {
 			if (res.data.message === "user") {
 				setName(res.data.user.username);
 				console.log(res.data.user);

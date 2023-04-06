@@ -36,7 +36,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://nykaclonebymyteam.herokuapp.com/products/sort",
+				url: "https://real-gold-earthworm-tam.cyclic.app/products/sort",
 				responseType: "stream",
 				headers: {
 					id,
@@ -55,7 +55,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://nykaclonebymyteam.herokuapp.com/products/sorting",
+				url: "https://real-gold-earthworm-tam.cyclic.app/products/sorting",
 				responseType: "stream",
 				headers: {
 					id,
@@ -75,7 +75,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://nykaclonebymyteam.herokuapp.com/products/sortAlpha",
+				url: "https://real-gold-earthworm-tam.cyclic.app/products/sortAlpha",
 				responseType: "stream",
 				headers: {
 					id,
@@ -94,7 +94,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://nykaclonebymyteam.herokuapp.com/products/sortRevAlpha",
+				url: "https://real-gold-earthworm-tam.cyclic.app/products/sortRevAlpha",
 				responseType: "stream",
 				headers: {
 					id,

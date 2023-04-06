@@ -20,7 +20,7 @@ const Otp = () => {
 	const sendotp = () => {
 		console.log("sendotp");
 		axios
-			.post("https://nykaclonebymyteam.herokuapp.com/getotp", data)
+			.post("https://real-gold-earthworm-tam.cyclic.app/getotp", data)
 			.then((res) => {
 				console.log(res.data.otp);
 				setGetotp(res.data.otp);
@@ -50,7 +50,7 @@ const Otp = () => {
 			});
 			axios({
 				method: "post",
-				url: "https://nykaclonebymyteam.herokuapp.com/signup",
+				url: "https://real-gold-earthworm-tam.cyclic.app/signup",
 				data: { ...data },
 			})
 				.then((res) => {

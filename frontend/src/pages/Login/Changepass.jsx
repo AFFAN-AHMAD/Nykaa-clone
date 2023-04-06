@@ -19,7 +19,7 @@ const Changepass = () => {
 		e.preventDefault();
 		if (data.New_password === data.confirm_password) {
 			axios
-				.post("https://nykaclonebymyteam.herokuapp.com/updated", data)
+				.post("https://real-gold-earthworm-tam.cyclic.app/updated", data)
 				.then((res) => {
 					console.log(res.data.verify, "brgy");
 					if (res.data.verify) {

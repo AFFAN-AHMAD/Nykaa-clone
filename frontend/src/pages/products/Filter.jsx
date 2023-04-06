@@ -28,12 +28,12 @@ const FIlter = () => {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		axios
-			.get("https://nykaclonebymyteam.herokuapp.com/products/brand")
+			.get("https://real-gold-earthworm-tam.cyclic.app/products/brand")
 			.then(({ data }) => {
 				SetNoOfBrands(data);
 			});
 		axios
-			.get("https://nykaclonebymyteam.herokuapp.com/products/category")
+			.get("https://real-gold-earthworm-tam.cyclic.app/products/category")
 			.then(({ data }) => {
 				SetnoOfCategory(data);
 			});
@@ -70,7 +70,7 @@ const FIlter = () => {
 	useEffect(() => {
 		axios({
 			method: "get",
-			url: "https://nykaclonebymyteam.herokuapp.com/products/filter",
+			url: "https://real-gold-earthworm-tam.cyclic.app/products/filter",
 			responseType: "stream",
 			headers: {
 				brand: brandsFil,
