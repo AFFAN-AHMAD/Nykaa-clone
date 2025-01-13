@@ -16,7 +16,7 @@ import {Link,useNavigate} from "react-router-dom"
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 import { useMediaQuery } from "@chakra-ui/react";
-
+import n01 from "../../assets/n01.jpeg"
 const data = {
 	isNew: false,
 	imageURL:
@@ -96,7 +96,7 @@ function ProductAddToCart({ data }) {
 				// border="1px solid red"
 			>
 				<Image
-					src={data.images[0]}
+					src={n01}
 					alt={`Picture of ${data.name}`}
 					roundedTop="lg"
 					h="240px"
