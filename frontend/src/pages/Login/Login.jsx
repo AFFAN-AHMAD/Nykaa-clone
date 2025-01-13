@@ -13,7 +13,7 @@ const Login = () => {
 		console.log(data, " Sent data");
 		axios({
 			method: "post",
-			url: "https://real-gold-earthworm-tam.cyclic.app/login",
+			url: "http://localhost:8080/login",
 			data: { ...data },
 		})
 			.then((res) => {

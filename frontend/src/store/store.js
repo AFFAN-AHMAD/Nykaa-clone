@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   products: filterReducer,
   page: pageReducer,
-  abc: fjs,
+  // abc: fjs,
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));

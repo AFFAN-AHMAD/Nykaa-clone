@@ -28,12 +28,12 @@ const FIlter = () => {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		axios
-			.get("https://real-gold-earthworm-tam.cyclic.app/products/brand")
+			.get("http://localhost:8080/products/brand")
 			.then(({ data }) => {
 				SetNoOfBrands(data);
 			});
 		axios
-			.get("https://real-gold-earthworm-tam.cyclic.app/products/category")
+			.get("http://localhost:8080/products/category")
 			.then(({ data }) => {
 				SetnoOfCategory(data);
 			});
@@ -70,7 +70,7 @@ const FIlter = () => {
 	useEffect(() => {
 		axios({
 			method: "get",
-			url: "https://real-gold-earthworm-tam.cyclic.app/products/filter",
+			url: "http://localhost:8080/products/filter",
 			responseType: "stream",
 			headers: {
 				brand: brandsFil,

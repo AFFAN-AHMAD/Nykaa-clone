@@ -21,7 +21,7 @@ export const getItemApi = () => (dispatch) => {
   dispatch({ type: GET_ITEM_CART_LOADING });
 
   axios
-    .get("https://real-gold-earthworm-tam.cyclic.app/cart")
+    .get("http://localhost:8080/cart")
     .then((res) => {
       return dispatch({ type: GET_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -32,7 +32,7 @@ export const getSingleItemApi = (id) => (dispatch) => {
   dispatch({ type: GET_SINGLE_ITEM_CART_LOADING });
 
   axios
-    .get(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`)
+    .get(`http://localhost:8080/cart/${id}`)
     .then((res) => {
       return dispatch({ type: GET_SINGLE_ITEM_CART_SUCCESS, payload: res.data });
     })
@@ -43,7 +43,7 @@ export const addCartApi = (item) => (dispatch) => {
   dispatch({ type: ADD_TO_CART_LOADING });
 
   axios
-    .post("https://real-gold-earthworm-tam.cyclic.app/cart", {
+    .post("http://localhost:8080/cart", {
       name: item.name,
       gram: item.gram,
       image: item.images[0],
@@ -62,7 +62,7 @@ export const removeCartApi = (id) => (dispatch) => {
   dispatch({ type: REMOVE_FROM_CART_LOADING });
 
   axios
-    .delete(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`)
+    .delete(`http://localhost:8080/cart/${id}`)
     .then((res) => dispatch({ type: REMOVE_FROM_CART_SUCCESS, payload: id }))
 
     .catch((r) => dispatch({ type: REMOVE_FROM_CART_ERROR }));
@@ -71,7 +71,7 @@ export const removeCartApi = (id) => (dispatch) => {
 export const updateCartApi = (id, quantity) => (dispatch) => {
   dispatch({ type: UPDATE_CART_LOADING });
   axios
-    .put(`https://real-gold-earthworm-tam.cyclic.app/cart/${id}`, {
+    .put(`http://localhost:8080/cart/${id}`, {
       quantity,
     })
     .then((res) => {

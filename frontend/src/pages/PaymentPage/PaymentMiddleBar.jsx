@@ -38,7 +38,7 @@ const PaymentMiddleBar = () => {
 	});
 	const handlePay = () => {
 		toast();
-		axios.delete("https://real-gold-earthworm-tam.cyclic.app/cart").then(() => {
+		axios.delete("http://localhost:8080/cart").then(() => {
 			dispatch(getItemApi())
 		})
 		navigate("/");

@@ -20,7 +20,7 @@ const Otp = () => {
 	const sendotp = () => {
 		console.log("sendotp");
 		axios
-			.post("https://real-gold-earthworm-tam.cyclic.app/getotp", data)
+			.post("http://localhost:8080/getotp", data)
 			.then((res) => {
 				console.log(res.data.otp);
 				setGetotp(res.data.otp);
@@ -50,7 +50,7 @@ const Otp = () => {
 			});
 			axios({
 				method: "post",
-				url: "https://real-gold-earthworm-tam.cyclic.app/signup",
+				url: "http://localhost:8080/signup",
 				data: { ...data },
 			})
 				.then((res) => {

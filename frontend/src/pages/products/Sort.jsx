@@ -36,7 +36,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://real-gold-earthworm-tam.cyclic.app/products/sort",
+				url: "http://localhost:8080/products/sort",
 				responseType: "stream",
 				headers: {
 					id,
@@ -55,7 +55,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://real-gold-earthworm-tam.cyclic.app/products/sorting",
+				url: "http://localhost:8080/products/sorting",
 				responseType: "stream",
 				headers: {
 					id,
@@ -75,7 +75,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://real-gold-earthworm-tam.cyclic.app/products/sortAlpha",
+				url: "http://localhost:8080/products/sortAlpha",
 				responseType: "stream",
 				headers: {
 					id,
@@ -94,7 +94,7 @@ const Sort = () => {
 		if (checked) {
 			axios({
 				method: "get",
-				url: "https://real-gold-earthworm-tam.cyclic.app/products/sortRevAlpha",
+				url: "http://localhost:8080/products/sortRevAlpha",
 				responseType: "stream",
 				headers: {
 					id,

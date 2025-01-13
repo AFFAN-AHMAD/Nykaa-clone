@@ -19,7 +19,7 @@ const Changepass = () => {
 		e.preventDefault();
 		if (data.New_password === data.confirm_password) {
 			axios
-				.post("https://real-gold-earthworm-tam.cyclic.app/updated", data)
+				.post("http://localhost:8080/updated", data)
 				.then((res) => {
 					console.log(res.data.verify, "brgy");
 					if (res.data.verify) {

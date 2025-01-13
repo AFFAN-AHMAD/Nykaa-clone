@@ -21,7 +21,7 @@ const Signup = () => {
         />
         <h1>Sign in</h1>
         <p style={{ marginLeft: "5vh", marginRight: "5vh" }}>
-          To quickly find your favourites items, saved addresses and payments.
+          To quickly find your favourite items, saved addresses and payments.
         </p>
         <hr style={{ margin: "2vh 5vh 0vh 5vh" }} />
         <p style={{ marginLeft: "5vh", marginTop: "2vh" }}>
